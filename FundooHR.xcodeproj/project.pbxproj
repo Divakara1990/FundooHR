@@ -1,0 +1,918 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A00671C1E03AA4B00586B48 /* SearchCollectionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A00671B1E03AA4B00586B48 /* SearchCollectionClass.swift */; };
+		0A0067201E03ACBB00586B48 /* SearchCollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A00671F1E03ACBB00586B48 /* SearchCollViewCell.swift */; };
+		0A0067221E03AD9800586B48 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0067211E03AD9800586B48 /* SearchBar.swift */; };
+		0A0067621E03F5F600586B48 /* 1logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0067611E03F5F600586B48 /* 1logout.png */; };
+		0A0067641E04001200586B48 /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0067631E04001200586B48 /* SlideMenuViewController.swift */; };
+		0A0067661E04029C00586B48 /* SlideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0067651E04029C00586B48 /* SlideMenuTableViewCell.swift */; };
+		0A0067681E04041300586B48 /* DashCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0067671E04041300586B48 /* DashCollectionViewCell.swift */; };
+		0A078E111DF935B30081F919 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A078E101DF935B30081F919 /* logo@2x.png */; };
+		0A32BA9C1DF98B5200DA1AD6 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A32BA9B1DF98B5200DA1AD6 /* TextField.swift */; };
+		0A4D1D361DFE6FAB00CD1C29 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D1D351DFE6FAB00CD1C29 /* DashboardViewController.swift */; };
+		0A4D1D3A1DFE8D6D00CD1C29 /* div.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A4D1D391DFE8D6D00CD1C29 /* div.jpg */; };
+		0A4D1D3C1DFE8E6900CD1C29 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D1D3B1DFE8E6900CD1C29 /* SearchViewController.swift */; };
+		0A56F1A01E0542750017F759 /* chandra.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0A56F19F1E0542750017F759 /* chandra.jpeg */; };
+		0A73FCE31E0FEC7900C4B670 /* SalaryPayslipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A73FCE21E0FEC7900C4B670 /* SalaryPayslipViewController.swift */; };
+		0AA562871E1137FF0006F970 /* SalaryCollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA562861E1137FF0006F970 /* SalaryCollViewCell.swift */; };
+		0AB0D1271E0F90C3006AD8C3 /* ReportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0D1261E0F90C3006AD8C3 /* ReportCollectionViewCell.swift */; };
+		0AB0D1291E0F9D6D006AD8C3 /* ReportCollectionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0D1281E0F9D6D006AD8C3 /* ReportCollectionClass.swift */; };
+		0AB0D12B1E0FA4DD006AD8C3 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0D12A1E0FA4DD006AD8C3 /* ReportsViewController.swift */; };
+		0AB0D12D1E0FD992006AD8C3 /* Screen Shot 2016-12-25 at 4.08.31 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB0D12C1E0FD992006AD8C3 /* Screen Shot 2016-12-25 at 4.08.31 PM.png */; };
+		0AB1E7871E122B80003EC169 /* AttendanceReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1E7861E122B80003EC169 /* AttendanceReportViewController.swift */; };
+		0AB1E7891E1269CE003EC169 /* AttendanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1E7881E1269CE003EC169 /* AttendanceTableViewCell.swift */; };
+		0AB1E7D71E12974A003EC169 /* AttendanceCollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1E7D61E12974A003EC169 /* AttendanceCollViewCell.swift */; };
+		0AB1E7D91E129ED4003EC169 /* ViewInsideTabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1E7D81E129ED4003EC169 /* ViewInsideTabelCell.swift */; };
+		0AB8F04A1E07B02200358CCC /* DashCollectionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB8F0491E07B02200358CCC /* DashCollectionClass.swift */; };
+		0ABA378E1E01710B0013A218 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA378D1E01710B0013A218 /* SWRevealViewController.m */; };
+		0AC092401E09464F00C2BD3A /* EngineerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0923F1E09464F00C2BD3A /* EngineerDetails.swift */; };
+		0AC092421E095BDB00C2BD3A /* EngineerDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC092411E095BDB00C2BD3A /* EngineerDetailsViewModel.swift */; };
+		0AC092441E095C0100C2BD3A /* EngineerDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC092431E095C0100C2BD3A /* EngineerDetailsController.swift */; };
+		0AC092481E095C9600C2BD3A /* FetchEngineerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC092471E095C9600C2BD3A /* FetchEngineerDetails.swift */; };
+		0ACC07251DF82A9D005BE968 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC07241DF82A9D005BE968 /* AppDelegate.swift */; };
+		0ACC07271DF82A9D005BE968 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC07261DF82A9D005BE968 /* ViewController.swift */; };
+		0ACC072A1DF82A9D005BE968 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACC07281DF82A9D005BE968 /* Main.storyboard */; };
+		0ACC072C1DF82A9D005BE968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACC072B1DF82A9D005BE968 /* Assets.xcassets */; };
+		0ACC072F1DF82A9D005BE968 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ACC072D1DF82A9D005BE968 /* LaunchScreen.storyboard */; };
+		0ACC073A1DF82A9E005BE968 /* FundooHRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC07391DF82A9E005BE968 /* FundooHRTests.swift */; };
+		0ACC07451DF82A9E005BE968 /* FundooHRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC07441DF82A9E005BE968 /* FundooHRUITests.swift */; };
+		0ACE151F1E0BAA3500BE4455 /* EngineerTabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACE151E1E0BAA3500BE4455 /* EngineerTabelViewCell.swift */; };
+		0AE82E441E025701000B52C2 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AE82E431E025701000B52C2 /* logout.png */; };
+		0AE82E461E025704000B52C2 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AE82E451E025704000B52C2 /* user.png */; };
+		0AE82E481E025708000B52C2 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AE82E471E025708000B52C2 /* menu.png */; };
+		0AE82E4A1E02570D000B52C2 /* summary.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AE82E491E02570D000B52C2 /* summary.png */; };
+		0FFF143E8FB56F0D1B432FBA /* Pods_FundooHRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CFA920F9F1C5C79A26C5331 /* Pods_FundooHRTests.framework */; };
+		152181914849697A3AECC666 /* Pods_FundooHR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B16B8B92337F99B12F3D63 /* Pods_FundooHR.framework */; };
+		62CFEA37220FCF6B703372CE /* Pods_FundooHRUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433713E1F5E5D23C2FCDF0E8 /* Pods_FundooHRUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0ACC07361DF82A9E005BE968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ACC07191DF82A9D005BE968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ACC07201DF82A9D005BE968;
+			remoteInfo = FundooHR;
+		};
+		0ACC07411DF82A9E005BE968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ACC07191DF82A9D005BE968 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ACC07201DF82A9D005BE968;
+			remoteInfo = FundooHR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A00671B1E03AA4B00586B48 /* SearchCollectionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCollectionClass.swift; sourceTree = "<group>"; };
+		0A00671F1E03ACBB00586B48 /* SearchCollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCollViewCell.swift; sourceTree = "<group>"; };
+		0A0067211E03AD9800586B48 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		0A0067611E03F5F600586B48 /* 1logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1logout.png; sourceTree = "<group>"; };
+		0A0067631E04001200586B48 /* SlideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
+		0A0067651E04029C00586B48 /* SlideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		0A0067671E04041300586B48 /* DashCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashCollectionViewCell.swift; sourceTree = "<group>"; };
+		0A078E101DF935B30081F919 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo@2x.png"; path = "../logo@2x.png"; sourceTree = "<group>"; };
+		0A32BA9B1DF98B5200DA1AD6 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = ../TextField.swift; sourceTree = "<group>"; };
+		0A4D1D351DFE6FAB00CD1C29 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DashboardViewController.swift; path = ../DashboardViewController.swift; sourceTree = "<group>"; };
+		0A4D1D391DFE8D6D00CD1C29 /* div.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = div.jpg; path = ../div.jpg; sourceTree = "<group>"; };
+		0A4D1D3B1DFE8E6900CD1C29 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = ../SearchViewController.swift; sourceTree = "<group>"; };
+		0A56F19F1E0542750017F759 /* chandra.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chandra.jpeg; sourceTree = "<group>"; };
+		0A73FCE21E0FEC7900C4B670 /* SalaryPayslipViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalaryPayslipViewController.swift; sourceTree = "<group>"; };
+		0AA562861E1137FF0006F970 /* SalaryCollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalaryCollViewCell.swift; sourceTree = "<group>"; };
+		0AB0D1261E0F90C3006AD8C3 /* ReportCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCollectionViewCell.swift; sourceTree = "<group>"; };
+		0AB0D1281E0F9D6D006AD8C3 /* ReportCollectionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCollectionClass.swift; sourceTree = "<group>"; };
+		0AB0D12A1E0FA4DD006AD8C3 /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
+		0AB0D12C1E0FD992006AD8C3 /* Screen Shot 2016-12-25 at 4.08.31 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2016-12-25 at 4.08.31 PM.png"; sourceTree = "<group>"; };
+		0AB1E7861E122B80003EC169 /* AttendanceReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceReportViewController.swift; sourceTree = "<group>"; };
+		0AB1E7881E1269CE003EC169 /* AttendanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceTableViewCell.swift; sourceTree = "<group>"; };
+		0AB1E7D61E12974A003EC169 /* AttendanceCollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceCollViewCell.swift; sourceTree = "<group>"; };
+		0AB1E7D81E129ED4003EC169 /* ViewInsideTabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInsideTabelCell.swift; sourceTree = "<group>"; };
+		0AB8F0491E07B02200358CCC /* DashCollectionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashCollectionClass.swift; sourceTree = "<group>"; };
+		0ABA378B1E01710B0013A218 /* FundooHR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FundooHR-Bridging-Header.h"; path = "../FundooHR-Bridging-Header.h"; sourceTree = "<group>"; };
+		0ABA378C1E01710B0013A218 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../SWRevealViewController.h; sourceTree = "<group>"; };
+		0ABA378D1E01710B0013A218 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../SWRevealViewController.m; sourceTree = "<group>"; };
+		0AC0923F1E09464F00C2BD3A /* EngineerDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineerDetails.swift; sourceTree = "<group>"; };
+		0AC092411E095BDB00C2BD3A /* EngineerDetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineerDetailsViewModel.swift; sourceTree = "<group>"; };
+		0AC092431E095C0100C2BD3A /* EngineerDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineerDetailsController.swift; sourceTree = "<group>"; };
+		0AC092471E095C9600C2BD3A /* FetchEngineerDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchEngineerDetails.swift; sourceTree = "<group>"; };
+		0ACC07211DF82A9D005BE968 /* FundooHR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FundooHR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ACC07241DF82A9D005BE968 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0ACC07261DF82A9D005BE968 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = FundooHR/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		0ACC07291DF82A9D005BE968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0ACC072B1DF82A9D005BE968 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ACC072E1DF82A9D005BE968 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0ACC07301DF82A9D005BE968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		0ACC07351DF82A9E005BE968 /* FundooHRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FundooHRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ACC07391DF82A9E005BE968 /* FundooHRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundooHRTests.swift; sourceTree = "<group>"; };
+		0ACC073B1DF82A9E005BE968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ACC07401DF82A9E005BE968 /* FundooHRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FundooHRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ACC07441DF82A9E005BE968 /* FundooHRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundooHRUITests.swift; sourceTree = "<group>"; };
+		0ACC07461DF82A9E005BE968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ACE151E1E0BAA3500BE4455 /* EngineerTabelViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineerTabelViewCell.swift; sourceTree = "<group>"; };
+		0AE82E431E025701000B52C2 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logout.png; path = ../logout.png; sourceTree = "<group>"; };
+		0AE82E451E025704000B52C2 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = ../user.png; sourceTree = "<group>"; };
+		0AE82E471E025708000B52C2 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = ../menu.png; sourceTree = "<group>"; };
+		0AE82E491E02570D000B52C2 /* summary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = summary.png; path = ../summary.png; sourceTree = "<group>"; };
+		12E55DC2245C8498FCF10BDA /* Pods-FundooHR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundooHR.release.xcconfig"; path = "Pods/Target Support Files/Pods-FundooHR/Pods-FundooHR.release.xcconfig"; sourceTree = "<group>"; };
+		22DC66A07F213BA4F7209EE8 /* Pods-FundooHRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundooHRUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FundooHRUITests/Pods-FundooHRUITests.release.xcconfig"; sourceTree = "<group>"; };
+		26C0AEF5E49436B0111EFD24 /* Pods-FundooHR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundooHR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FundooHR/Pods-FundooHR.debug.xcconfig"; sourceTree = "<group>"; };
+		433713E1F5E5D23C2FCDF0E8 /* Pods_FundooHRUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FundooHRUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FDBFBF616851DE0827D955B /* Pods-FundooHRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundooHRTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FundooHRTests/Pods-FundooHRTests.release.xcconfig"; sourceTree = "<group>"; };
+		8CFA920F9F1C5C79A26C5331 /* Pods_FundooHRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FundooHRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B16B8B92337F99B12F3D63 /* Pods_FundooHR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FundooHR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE2511B2D93FC7928C71E2D9 /* Pods-FundooHRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundooHRTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FundooHRTests/Pods-FundooHRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E595B7D5950B2EC5262521B6 /* Pods-FundooHRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundooHRUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FundooHRUITests/Pods-FundooHRUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ACC071E1DF82A9D005BE968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152181914849697A3AECC666 /* Pods_FundooHR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ACC07321DF82A9E005BE968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FFF143E8FB56F0D1B432FBA /* Pods_FundooHRTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ACC073D1DF82A9E005BE968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62CFEA37220FCF6B703372CE /* Pods_FundooHRUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AC092451E095C4B00C2BD3A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0AC092471E095C9600C2BD3A /* FetchEngineerDetails.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0ACC07181DF82A9D005BE968 = {
+			isa = PBXGroup;
+			children = (
+				0ACC07231DF82A9D005BE968 /* FundooHR */,
+				0ACC07381DF82A9E005BE968 /* FundooHRTests */,
+				0ACC07431DF82A9E005BE968 /* FundooHRUITests */,
+				0ACC07221DF82A9D005BE968 /* Products */,
+				3FC0E526A6ED10E2E0F5E7C7 /* Frameworks */,
+				E0E8B7502924F2F87B317B2E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0ACC07221DF82A9D005BE968 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC07211DF82A9D005BE968 /* FundooHR.app */,
+				0ACC07351DF82A9E005BE968 /* FundooHRTests.xctest */,
+				0ACC07401DF82A9E005BE968 /* FundooHRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0ACC07231DF82A9D005BE968 /* FundooHR */ = {
+			isa = PBXGroup;
+			children = (
+				0AB0D12C1E0FD992006AD8C3 /* Screen Shot 2016-12-25 at 4.08.31 PM.png */,
+				0AE82E511E02C56C000B52C2 /* View */,
+				0AE82E501E02C53F000B52C2 /* ViewModel */,
+				0AE82E4F1E02C523000B52C2 /* Controller */,
+				0AC092451E095C4B00C2BD3A /* Services */,
+				0AE82E4E1E02C508000B52C2 /* Models */,
+				0AE82E541E02C75F000B52C2 /* Interfaces */,
+				0AE82E521E02C579000B52C2 /* Data */,
+				0AE82E531E02C72B000B52C2 /* Support */,
+				0ACC07241DF82A9D005BE968 /* AppDelegate.swift */,
+				0ACC072B1DF82A9D005BE968 /* Assets.xcassets */,
+			);
+			path = FundooHR;
+			sourceTree = "<group>";
+		};
+		0ACC07381DF82A9E005BE968 /* FundooHRTests */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC07391DF82A9E005BE968 /* FundooHRTests.swift */,
+				0ACC073B1DF82A9E005BE968 /* Info.plist */,
+			);
+			path = FundooHRTests;
+			sourceTree = "<group>";
+		};
+		0ACC07431DF82A9E005BE968 /* FundooHRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC07441DF82A9E005BE968 /* FundooHRUITests.swift */,
+				0ACC07461DF82A9E005BE968 /* Info.plist */,
+			);
+			path = FundooHRUITests;
+			sourceTree = "<group>";
+		};
+		0AE82E4E1E02C508000B52C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AC0923F1E09464F00C2BD3A /* EngineerDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0AE82E4F1E02C523000B52C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0AC092431E095C0100C2BD3A /* EngineerDetailsController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0AE82E501E02C53F000B52C2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0AC092411E095BDB00C2BD3A /* EngineerDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0AE82E511E02C56C000B52C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC07261DF82A9D005BE968 /* ViewController.swift */,
+				0A4D1D351DFE6FAB00CD1C29 /* DashboardViewController.swift */,
+				0A4D1D3B1DFE8E6900CD1C29 /* SearchViewController.swift */,
+				0A00671B1E03AA4B00586B48 /* SearchCollectionClass.swift */,
+				0A00671F1E03ACBB00586B48 /* SearchCollViewCell.swift */,
+				0A0067211E03AD9800586B48 /* SearchBar.swift */,
+				0A0067631E04001200586B48 /* SlideMenuViewController.swift */,
+				0A0067651E04029C00586B48 /* SlideMenuTableViewCell.swift */,
+				0A0067671E04041300586B48 /* DashCollectionViewCell.swift */,
+				0AB8F0491E07B02200358CCC /* DashCollectionClass.swift */,
+				0ACE151E1E0BAA3500BE4455 /* EngineerTabelViewCell.swift */,
+				0AB0D1261E0F90C3006AD8C3 /* ReportCollectionViewCell.swift */,
+				0AB0D1281E0F9D6D006AD8C3 /* ReportCollectionClass.swift */,
+				0AB0D12A1E0FA4DD006AD8C3 /* ReportsViewController.swift */,
+				0A73FCE21E0FEC7900C4B670 /* SalaryPayslipViewController.swift */,
+				0AA562861E1137FF0006F970 /* SalaryCollViewCell.swift */,
+				0AB1E7861E122B80003EC169 /* AttendanceReportViewController.swift */,
+				0AB1E7881E1269CE003EC169 /* AttendanceTableViewCell.swift */,
+				0AB1E7D61E12974A003EC169 /* AttendanceCollViewCell.swift */,
+				0AB1E7D81E129ED4003EC169 /* ViewInsideTabelCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0AE82E521E02C579000B52C2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC07301DF82A9D005BE968 /* Info.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0AE82E531E02C72B000B52C2 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0ABA378C1E01710B0013A218 /* SWRevealViewController.h */,
+				0ABA378D1E01710B0013A218 /* SWRevealViewController.m */,
+				0ABA378B1E01710B0013A218 /* FundooHR-Bridging-Header.h */,
+				0A56F19F1E0542750017F759 /* chandra.jpeg */,
+				0AE82E451E025704000B52C2 /* user.png */,
+				0A32BA9B1DF98B5200DA1AD6 /* TextField.swift */,
+				0A078E101DF935B30081F919 /* logo@2x.png */,
+				0AE82E471E025708000B52C2 /* menu.png */,
+				0A4D1D391DFE8D6D00CD1C29 /* div.jpg */,
+				0A0067611E03F5F600586B48 /* 1logout.png */,
+				0AE82E491E02570D000B52C2 /* summary.png */,
+				0AE82E431E025701000B52C2 /* logout.png */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		0AE82E541E02C75F000B52C2 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC07281DF82A9D005BE968 /* Main.storyboard */,
+				0ACC072D1DF82A9D005BE968 /* LaunchScreen.storyboard */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		3FC0E526A6ED10E2E0F5E7C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1B16B8B92337F99B12F3D63 /* Pods_FundooHR.framework */,
+				8CFA920F9F1C5C79A26C5331 /* Pods_FundooHRTests.framework */,
+				433713E1F5E5D23C2FCDF0E8 /* Pods_FundooHRUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0E8B7502924F2F87B317B2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26C0AEF5E49436B0111EFD24 /* Pods-FundooHR.debug.xcconfig */,
+				12E55DC2245C8498FCF10BDA /* Pods-FundooHR.release.xcconfig */,
+				DE2511B2D93FC7928C71E2D9 /* Pods-FundooHRTests.debug.xcconfig */,
+				6FDBFBF616851DE0827D955B /* Pods-FundooHRTests.release.xcconfig */,
+				E595B7D5950B2EC5262521B6 /* Pods-FundooHRUITests.debug.xcconfig */,
+				22DC66A07F213BA4F7209EE8 /* Pods-FundooHRUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0ACC07201DF82A9D005BE968 /* FundooHR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ACC07491DF82A9E005BE968 /* Build configuration list for PBXNativeTarget "FundooHR" */;
+			buildPhases = (
+				2D292187252307BA6A5339C4 /* [CP] Check Pods Manifest.lock */,
+				0ACC071D1DF82A9D005BE968 /* Sources */,
+				0ACC071E1DF82A9D005BE968 /* Frameworks */,
+				0ACC071F1DF82A9D005BE968 /* Resources */,
+				81FD0B1EA26AC19429B255E9 /* [CP] Embed Pods Frameworks */,
+				A9986369D6398C914BD5734E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FundooHR;
+			productName = FundooHR;
+			productReference = 0ACC07211DF82A9D005BE968 /* FundooHR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0ACC07341DF82A9E005BE968 /* FundooHRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ACC074C1DF82A9E005BE968 /* Build configuration list for PBXNativeTarget "FundooHRTests" */;
+			buildPhases = (
+				70F759E5AD47457D9D9AA856 /* [CP] Check Pods Manifest.lock */,
+				0ACC07311DF82A9E005BE968 /* Sources */,
+				0ACC07321DF82A9E005BE968 /* Frameworks */,
+				0ACC07331DF82A9E005BE968 /* Resources */,
+				D8B913FA39BD7C5F6DE34216 /* [CP] Embed Pods Frameworks */,
+				ECD2896E0CC906F7464DC1EF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ACC07371DF82A9E005BE968 /* PBXTargetDependency */,
+			);
+			name = FundooHRTests;
+			productName = FundooHRTests;
+			productReference = 0ACC07351DF82A9E005BE968 /* FundooHRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0ACC073F1DF82A9E005BE968 /* FundooHRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ACC074F1DF82A9E005BE968 /* Build configuration list for PBXNativeTarget "FundooHRUITests" */;
+			buildPhases = (
+				1BF8F622E5329C512C23E067 /* [CP] Check Pods Manifest.lock */,
+				0ACC073C1DF82A9E005BE968 /* Sources */,
+				0ACC073D1DF82A9E005BE968 /* Frameworks */,
+				0ACC073E1DF82A9E005BE968 /* Resources */,
+				F1A124C31A8AE8C8BF1288AC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ACC07421DF82A9E005BE968 /* PBXTargetDependency */,
+			);
+			name = FundooHRUITests;
+			productName = FundooHRUITests;
+			productReference = 0ACC07401DF82A9E005BE968 /* FundooHRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0ACC07191DF82A9D005BE968 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = BridgeLabz;
+				TargetAttributes = {
+					0ACC07201DF82A9D005BE968 = {
+						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+					0ACC07341DF82A9E005BE968 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0ACC07201DF82A9D005BE968;
+					};
+					0ACC073F1DF82A9E005BE968 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0ACC07201DF82A9D005BE968;
+					};
+				};
+			};
+			buildConfigurationList = 0ACC071C1DF82A9D005BE968 /* Build configuration list for PBXProject "FundooHR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0ACC07181DF82A9D005BE968;
+			productRefGroup = 0ACC07221DF82A9D005BE968 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0ACC07201DF82A9D005BE968 /* FundooHR */,
+				0ACC07341DF82A9E005BE968 /* FundooHRTests */,
+				0ACC073F1DF82A9E005BE968 /* FundooHRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0ACC071F1DF82A9D005BE968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB0D12D1E0FD992006AD8C3 /* Screen Shot 2016-12-25 at 4.08.31 PM.png in Resources */,
+				0AE82E4A1E02570D000B52C2 /* summary.png in Resources */,
+				0AE82E481E025708000B52C2 /* menu.png in Resources */,
+				0A56F1A01E0542750017F759 /* chandra.jpeg in Resources */,
+				0ACC072F1DF82A9D005BE968 /* LaunchScreen.storyboard in Resources */,
+				0A0067621E03F5F600586B48 /* 1logout.png in Resources */,
+				0A4D1D3A1DFE8D6D00CD1C29 /* div.jpg in Resources */,
+				0A078E111DF935B30081F919 /* logo@2x.png in Resources */,
+				0ACC072C1DF82A9D005BE968 /* Assets.xcassets in Resources */,
+				0AE82E461E025704000B52C2 /* user.png in Resources */,
+				0ACC072A1DF82A9D005BE968 /* Main.storyboard in Resources */,
+				0AE82E441E025701000B52C2 /* logout.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ACC07331DF82A9E005BE968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ACC073E1DF82A9E005BE968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BF8F622E5329C512C23E067 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2D292187252307BA6A5339C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		70F759E5AD47457D9D9AA856 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81FD0B1EA26AC19429B255E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FundooHR/Pods-FundooHR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9986369D6398C914BD5734E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FundooHR/Pods-FundooHR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8B913FA39BD7C5F6DE34216 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FundooHRTests/Pods-FundooHRTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECD2896E0CC906F7464DC1EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FundooHRTests/Pods-FundooHRTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1A124C31A8AE8C8BF1288AC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FundooHRUITests/Pods-FundooHRUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ACC071D1DF82A9D005BE968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB0D1271E0F90C3006AD8C3 /* ReportCollectionViewCell.swift in Sources */,
+				0A0067201E03ACBB00586B48 /* SearchCollViewCell.swift in Sources */,
+				0AA562871E1137FF0006F970 /* SalaryCollViewCell.swift in Sources */,
+				0AC092441E095C0100C2BD3A /* EngineerDetailsController.swift in Sources */,
+				0ACE151F1E0BAA3500BE4455 /* EngineerTabelViewCell.swift in Sources */,
+				0A4D1D3C1DFE8E6900CD1C29 /* SearchViewController.swift in Sources */,
+				0A0067641E04001200586B48 /* SlideMenuViewController.swift in Sources */,
+				0A32BA9C1DF98B5200DA1AD6 /* TextField.swift in Sources */,
+				0AB0D12B1E0FA4DD006AD8C3 /* ReportsViewController.swift in Sources */,
+				0ACC07271DF82A9D005BE968 /* ViewController.swift in Sources */,
+				0ACC07251DF82A9D005BE968 /* AppDelegate.swift in Sources */,
+				0A0067681E04041300586B48 /* DashCollectionViewCell.swift in Sources */,
+				0A73FCE31E0FEC7900C4B670 /* SalaryPayslipViewController.swift in Sources */,
+				0AB8F04A1E07B02200358CCC /* DashCollectionClass.swift in Sources */,
+				0A0067221E03AD9800586B48 /* SearchBar.swift in Sources */,
+				0A4D1D361DFE6FAB00CD1C29 /* DashboardViewController.swift in Sources */,
+				0A00671C1E03AA4B00586B48 /* SearchCollectionClass.swift in Sources */,
+				0AB1E7871E122B80003EC169 /* AttendanceReportViewController.swift in Sources */,
+				0AB1E7D91E129ED4003EC169 /* ViewInsideTabelCell.swift in Sources */,
+				0AB0D1291E0F9D6D006AD8C3 /* ReportCollectionClass.swift in Sources */,
+				0AC092401E09464F00C2BD3A /* EngineerDetails.swift in Sources */,
+				0AC092481E095C9600C2BD3A /* FetchEngineerDetails.swift in Sources */,
+				0A0067661E04029C00586B48 /* SlideMenuTableViewCell.swift in Sources */,
+				0AC092421E095BDB00C2BD3A /* EngineerDetailsViewModel.swift in Sources */,
+				0AB1E7D71E12974A003EC169 /* AttendanceCollViewCell.swift in Sources */,
+				0AB1E7891E1269CE003EC169 /* AttendanceTableViewCell.swift in Sources */,
+				0ABA378E1E01710B0013A218 /* SWRevealViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ACC07311DF82A9E005BE968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ACC073A1DF82A9E005BE968 /* FundooHRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ACC073C1DF82A9E005BE968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ACC07451DF82A9E005BE968 /* FundooHRUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0ACC07371DF82A9E005BE968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ACC07201DF82A9D005BE968 /* FundooHR */;
+			targetProxy = 0ACC07361DF82A9E005BE968 /* PBXContainerItemProxy */;
+		};
+		0ACC07421DF82A9E005BE968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ACC07201DF82A9D005BE968 /* FundooHR */;
+			targetProxy = 0ACC07411DF82A9E005BE968 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0ACC07281DF82A9D005BE968 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ACC07291DF82A9D005BE968 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0ACC072D1DF82A9D005BE968 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0ACC072E1DF82A9D005BE968 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0ACC07471DF82A9E005BE968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0ACC07481DF82A9E005BE968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0ACC074A1DF82A9E005BE968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26C0AEF5E49436B0111EFD24 /* Pods-FundooHR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = FundooHR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bridgelabz.FundooHR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FundooHR/FundooHR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0ACC074B1DF82A9E005BE968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12E55DC2245C8498FCF10BDA /* Pods-FundooHR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = FundooHR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bridgelabz.FundooHR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FundooHR/FundooHR-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0ACC074D1DF82A9E005BE968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE2511B2D93FC7928C71E2D9 /* Pods-FundooHRTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FundooHRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bridgelabz.FundooHRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FundooHR.app/FundooHR";
+			};
+			name = Debug;
+		};
+		0ACC074E1DF82A9E005BE968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FDBFBF616851DE0827D955B /* Pods-FundooHRTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FundooHRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bridgelabz.FundooHRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FundooHR.app/FundooHR";
+			};
+			name = Release;
+		};
+		0ACC07501DF82A9E005BE968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E595B7D5950B2EC5262521B6 /* Pods-FundooHRUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FundooHRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bridgelabz.FundooHRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FundooHR;
+			};
+			name = Debug;
+		};
+		0ACC07511DF82A9E005BE968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22DC66A07F213BA4F7209EE8 /* Pods-FundooHRUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FundooHRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bridgelabz.FundooHRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = FundooHR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ACC071C1DF82A9D005BE968 /* Build configuration list for PBXProject "FundooHR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ACC07471DF82A9E005BE968 /* Debug */,
+				0ACC07481DF82A9E005BE968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ACC07491DF82A9E005BE968 /* Build configuration list for PBXNativeTarget "FundooHR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ACC074A1DF82A9E005BE968 /* Debug */,
+				0ACC074B1DF82A9E005BE968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ACC074C1DF82A9E005BE968 /* Build configuration list for PBXNativeTarget "FundooHRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ACC074D1DF82A9E005BE968 /* Debug */,
+				0ACC074E1DF82A9E005BE968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ACC074F1DF82A9E005BE968 /* Build configuration list for PBXNativeTarget "FundooHRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ACC07501DF82A9E005BE968 /* Debug */,
+				0ACC07511DF82A9E005BE968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0ACC07191DF82A9D005BE968 /* Project object */;
+}

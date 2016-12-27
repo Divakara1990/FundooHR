@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D688E6EF98B857A3E853D10407E7081 /* Pods-FundooHRTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA131E7DB6566B4B93DB8A10CEE02F /* Pods-FundooHRTests-dummy.m */; };
+		39CEC86DCE88C603668BE9AD4049C4AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		3AA1363AC525E12A57B498A6F754F77D /* Pods-FundooHRUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFFDBF8A6E56D0CFEAFA353857F38ED /* Pods-FundooHRUITests-dummy.m */; };
+		4648650F8AB3768808DF0B63A28F5189 /* Pods-FundooHRUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A14411058735C39B3CECBCF6BBB62138 /* Pods-FundooHRUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CC5CD08AF40031580665AB6D889FA35 /* Pods-FundooHRTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 444A406386B70614A3E904BA09B97EF7 /* Pods-FundooHRTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F54537D928041DEBE72AC65662A131B /* Pods-FundooHR-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFD19814BA24295DEC6FADC3D496657C /* Pods-FundooHR-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A778C65B08D0917BACC6BAEBD08176CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		D2C0462D6A3375C598866F207512681B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F681310AA8B5FBC4AA68E292A044BC9C /* Pods-FundooHR-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E72CA7B086E81957ECAF14A5FA37CB6 /* Pods-FundooHR-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00998D91E1C3713314F94515AFF0C758 /* Pods-FundooHRTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FundooHRTests-frameworks.sh"; sourceTree = "<group>"; };
+		0CC0286775C2548C860497CCB7DC109A /* Pods-FundooHRTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FundooHRTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0D4FD6F7ACA297AC9CB70D8F5EEC562D /* Pods-FundooHR-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FundooHR-resources.sh"; sourceTree = "<group>"; };
+		15B7D03DF0FF7CD94618D9B005458A88 /* Pods-FundooHR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FundooHR.release.xcconfig"; sourceTree = "<group>"; };
+		18BA131E7DB6566B4B93DB8A10CEE02F /* Pods-FundooHRTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FundooHRTests-dummy.m"; sourceTree = "<group>"; };
+		1C59C3F15E8A931C17ADE4089F6BA2B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B8824C6336A5BB85ABEDF908F1CE54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36D2C9360732CDB339BAA6579DAC21F7 /* Pods-FundooHRTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FundooHRTests-resources.sh"; sourceTree = "<group>"; };
+		3916F3523C9F5E957BE17A1D7E082545 /* Pods-FundooHRUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FundooHRUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3CBE05FC81B6B442112BCF69DCD4296F /* Pods-FundooHR-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FundooHR-acknowledgements.plist"; sourceTree = "<group>"; };
+		444A406386B70614A3E904BA09B97EF7 /* Pods-FundooHRTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FundooHRTests-umbrella.h"; sourceTree = "<group>"; };
+		46845688C6BF90143F71125EF32C2814 /* Pods-FundooHRTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FundooHRTests.modulemap"; sourceTree = "<group>"; };
+		4AAEACA4CFE314D1A568C312B849C780 /* Pods-FundooHR-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FundooHR-frameworks.sh"; sourceTree = "<group>"; };
+		4D1B8CA7C6959CF1EDAA7987981D2FB2 /* Pods_FundooHRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FundooHRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		552315B4AB0D4BFFAB60B51EDF5A07B6 /* Pods-FundooHRUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FundooHRUITests.modulemap"; sourceTree = "<group>"; };
+		5C7DE71902968887D3B06815FC72FD30 /* Pods-FundooHRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FundooHRTests.release.xcconfig"; sourceTree = "<group>"; };
+		79879AC86B0CC0A6A2767A6766E61F75 /* Pods-FundooHR.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FundooHR.modulemap"; sourceTree = "<group>"; };
+		7AFFDBF8A6E56D0CFEAFA353857F38ED /* Pods-FundooHRUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FundooHRUITests-dummy.m"; sourceTree = "<group>"; };
+		7BBBF93D9F2F488BDBADA1E5BC2B781B /* Pods-FundooHRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FundooHRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		87126A6310035B91273DD1DDB9907A57 /* Pods-FundooHRUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FundooHRUITests.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E72CA7B086E81957ECAF14A5FA37CB6 /* Pods-FundooHR-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FundooHR-dummy.m"; sourceTree = "<group>"; };
+		A14411058735C39B3CECBCF6BBB62138 /* Pods-FundooHRUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FundooHRUITests-umbrella.h"; sourceTree = "<group>"; };
+		B16E1EA33E4FE849FA60C9CA303E029B /* Pods-FundooHR-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FundooHR-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B37D5686951F719BC819145EFEDA7A5E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3A466982B55DB8EA5121EFB63C6206F /* Pods-FundooHRUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FundooHRUITests-resources.sh"; sourceTree = "<group>"; };
+		BAFDC043A4EC4D6825B9DD4FE38F05B9 /* Pods-FundooHR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FundooHR.debug.xcconfig"; sourceTree = "<group>"; };
+		C2A404023B22F86EB760D351DE6C0CCB /* Pods-FundooHRTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FundooHRTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EFD2273907AF3982D04037A6C4664324 /* Pods-FundooHRUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FundooHRUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F403795823A1200CEE63FBB2C6189F82 /* Pods-FundooHRUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FundooHRUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F550D86A61C12FB34E382DBCC43D64C6 /* Pods_FundooHR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FundooHR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5F265BBB1AE6D3F52763C1E086776DB /* Pods-FundooHRUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FundooHRUITests-frameworks.sh"; sourceTree = "<group>"; };
+		FE9653CCDE774613A74D596E43E3CE36 /* Pods_FundooHRUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FundooHRUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD19814BA24295DEC6FADC3D496657C /* Pods-FundooHR-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FundooHR-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02C6D1ACC42AD28ED875EF962092226D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A778C65B08D0917BACC6BAEBD08176CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13E7AF24C12B969F98F3F9B0058346F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39CEC86DCE88C603668BE9AD4049C4AF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732FCC89632778B1373158A00FDBCFD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C0462D6A3375C598866F207512681B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		081EF73B558F8A8DBDF8168ED9CE9B18 /* Pods-FundooHRTests */ = {
+			isa = PBXGroup;
+			children = (
+				B37D5686951F719BC819145EFEDA7A5E /* Info.plist */,
+				46845688C6BF90143F71125EF32C2814 /* Pods-FundooHRTests.modulemap */,
+				0CC0286775C2548C860497CCB7DC109A /* Pods-FundooHRTests-acknowledgements.markdown */,
+				C2A404023B22F86EB760D351DE6C0CCB /* Pods-FundooHRTests-acknowledgements.plist */,
+				18BA131E7DB6566B4B93DB8A10CEE02F /* Pods-FundooHRTests-dummy.m */,
+				00998D91E1C3713314F94515AFF0C758 /* Pods-FundooHRTests-frameworks.sh */,
+				36D2C9360732CDB339BAA6579DAC21F7 /* Pods-FundooHRTests-resources.sh */,
+				444A406386B70614A3E904BA09B97EF7 /* Pods-FundooHRTests-umbrella.h */,
+				7BBBF93D9F2F488BDBADA1E5BC2B781B /* Pods-FundooHRTests.debug.xcconfig */,
+				5C7DE71902968887D3B06815FC72FD30 /* Pods-FundooHRTests.release.xcconfig */,
+			);
+			name = "Pods-FundooHRTests";
+			path = "Target Support Files/Pods-FundooHRTests";
+			sourceTree = "<group>";
+		};
+		3CA3DBB3D20A89715C0B69CCED3F75EE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE0390C2A52157D39756DFF10A76F545 /* Pods-FundooHR */,
+				081EF73B558F8A8DBDF8168ED9CE9B18 /* Pods-FundooHRTests */,
+				BFC8352E6B9667C427F9DA446DE4AED9 /* Pods-FundooHRUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F7E43DCA18C1A35628A061C74E01AE9D /* Products */,
+				3CA3DBB3D20A89715C0B69CCED3F75EE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFC8352E6B9667C427F9DA446DE4AED9 /* Pods-FundooHRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C59C3F15E8A931C17ADE4089F6BA2B3 /* Info.plist */,
+				552315B4AB0D4BFFAB60B51EDF5A07B6 /* Pods-FundooHRUITests.modulemap */,
+				EFD2273907AF3982D04037A6C4664324 /* Pods-FundooHRUITests-acknowledgements.markdown */,
+				3916F3523C9F5E957BE17A1D7E082545 /* Pods-FundooHRUITests-acknowledgements.plist */,
+				7AFFDBF8A6E56D0CFEAFA353857F38ED /* Pods-FundooHRUITests-dummy.m */,
+				F5F265BBB1AE6D3F52763C1E086776DB /* Pods-FundooHRUITests-frameworks.sh */,
+				B3A466982B55DB8EA5121EFB63C6206F /* Pods-FundooHRUITests-resources.sh */,
+				A14411058735C39B3CECBCF6BBB62138 /* Pods-FundooHRUITests-umbrella.h */,
+				F403795823A1200CEE63FBB2C6189F82 /* Pods-FundooHRUITests.debug.xcconfig */,
+				87126A6310035B91273DD1DDB9907A57 /* Pods-FundooHRUITests.release.xcconfig */,
+			);
+			name = "Pods-FundooHRUITests";
+			path = "Target Support Files/Pods-FundooHRUITests";
+			sourceTree = "<group>";
+		};
+		EE0390C2A52157D39756DFF10A76F545 /* Pods-FundooHR */ = {
+			isa = PBXGroup;
+			children = (
+				20B8824C6336A5BB85ABEDF908F1CE54 /* Info.plist */,
+				79879AC86B0CC0A6A2767A6766E61F75 /* Pods-FundooHR.modulemap */,
+				B16E1EA33E4FE849FA60C9CA303E029B /* Pods-FundooHR-acknowledgements.markdown */,
+				3CBE05FC81B6B442112BCF69DCD4296F /* Pods-FundooHR-acknowledgements.plist */,
+				9E72CA7B086E81957ECAF14A5FA37CB6 /* Pods-FundooHR-dummy.m */,
+				4AAEACA4CFE314D1A568C312B849C780 /* Pods-FundooHR-frameworks.sh */,
+				0D4FD6F7ACA297AC9CB70D8F5EEC562D /* Pods-FundooHR-resources.sh */,
+				FFD19814BA24295DEC6FADC3D496657C /* Pods-FundooHR-umbrella.h */,
+				BAFDC043A4EC4D6825B9DD4FE38F05B9 /* Pods-FundooHR.debug.xcconfig */,
+				15B7D03DF0FF7CD94618D9B005458A88 /* Pods-FundooHR.release.xcconfig */,
+			);
+			name = "Pods-FundooHR";
+			path = "Target Support Files/Pods-FundooHR";
+			sourceTree = "<group>";
+		};
+		F7E43DCA18C1A35628A061C74E01AE9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F550D86A61C12FB34E382DBCC43D64C6 /* Pods_FundooHR.framework */,
+				4D1B8CA7C6959CF1EDAA7987981D2FB2 /* Pods_FundooHRTests.framework */,
+				FE9653CCDE774613A74D596E43E3CE36 /* Pods_FundooHRUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		252C7A6D4EE63447A3681530A3E94C20 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4648650F8AB3768808DF0B63A28F5189 /* Pods-FundooHRUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		389E45C919CCD82F1026FB50D9992B13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F54537D928041DEBE72AC65662A131B /* Pods-FundooHR-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8637A779EFC3F7EBDF54C031E9FAFDF6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC5CD08AF40031580665AB6D889FA35 /* Pods-FundooHRTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		25C6B1DB5BA1FFE408B93425DC034AEB /* Pods-FundooHRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA6B53133DE1DA14D5F93AB4CFE1F84 /* Build configuration list for PBXNativeTarget "Pods-FundooHRUITests" */;
+			buildPhases = (
+				74F4FB3D780A185B2F1D3498AC5770E1 /* Sources */,
+				02C6D1ACC42AD28ED875EF962092226D /* Frameworks */,
+				252C7A6D4EE63447A3681530A3E94C20 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FundooHRUITests";
+			productName = "Pods-FundooHRUITests";
+			productReference = FE9653CCDE774613A74D596E43E3CE36 /* Pods_FundooHRUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2F3211618C2713D7CEB1C5B13A813164 /* Pods-FundooHR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5586F61D89325A3279A98AD5C2E0EAB /* Build configuration list for PBXNativeTarget "Pods-FundooHR" */;
+			buildPhases = (
+				1B43C22D8AB9F8120C9097591BC497E3 /* Sources */,
+				13E7AF24C12B969F98F3F9B0058346F3 /* Frameworks */,
+				389E45C919CCD82F1026FB50D9992B13 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FundooHR";
+			productName = "Pods-FundooHR";
+			productReference = F550D86A61C12FB34E382DBCC43D64C6 /* Pods_FundooHR.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A41317F0CA481226C647E802BDCDF70 /* Pods-FundooHRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48BAE9D7ED27D24D609F7095B99435B6 /* Build configuration list for PBXNativeTarget "Pods-FundooHRTests" */;
+			buildPhases = (
+				CD592BA524C839F9B811C6103F07F057 /* Sources */,
+				732FCC89632778B1373158A00FDBCFD8 /* Frameworks */,
+				8637A779EFC3F7EBDF54C031E9FAFDF6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FundooHRTests";
+			productName = "Pods-FundooHRTests";
+			productReference = 4D1B8CA7C6959CF1EDAA7987981D2FB2 /* Pods_FundooHRTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F7E43DCA18C1A35628A061C74E01AE9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F3211618C2713D7CEB1C5B13A813164 /* Pods-FundooHR */,
+				5A41317F0CA481226C647E802BDCDF70 /* Pods-FundooHRTests */,
+				25C6B1DB5BA1FFE408B93425DC034AEB /* Pods-FundooHRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B43C22D8AB9F8120C9097591BC497E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F681310AA8B5FBC4AA68E292A044BC9C /* Pods-FundooHR-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F4FB3D780A185B2F1D3498AC5770E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA1363AC525E12A57B498A6F754F77D /* Pods-FundooHRUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD592BA524C839F9B811C6103F07F057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D688E6EF98B857A3E853D10407E7081 /* Pods-FundooHRTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		05BA9C71889FFD7F05BAD97911AB920E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15B7D03DF0FF7CD94618D9B005458A88 /* Pods-FundooHR.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FundooHR/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FundooHR/Pods-FundooHR.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FundooHR;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0FB935ED7EE1BE7E4364712205488321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C7DE71902968887D3B06815FC72FD30 /* Pods-FundooHRTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FundooHRTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FundooHRTests/Pods-FundooHRTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FundooHRTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		16C761E00F57CB8882FAD3B81A00E1E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAFDC043A4EC4D6825B9DD4FE38F05B9 /* Pods-FundooHR.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FundooHR/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FundooHR/Pods-FundooHR.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FundooHR;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		187C04B88F4DE5B448FE33D1D085275F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87126A6310035B91273DD1DDB9907A57 /* Pods-FundooHRUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FundooHRUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FundooHRUITests/Pods-FundooHRUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FundooHRUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1C908C9E23B0214C9B9B55CCB6C90A02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		944588A0E39C2A142E72193CF851E20D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F403795823A1200CEE63FBB2C6189F82 /* Pods-FundooHRUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FundooHRUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FundooHRUITests/Pods-FundooHRUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FundooHRUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9E8533E615EA7FD02D27524E68EE149 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EDA99F80105029B558731F28BEC7AE0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BBBF93D9F2F488BDBADA1E5BC2B781B /* Pods-FundooHRTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FundooHRTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FundooHRTests/Pods-FundooHRTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FundooHRTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E8533E615EA7FD02D27524E68EE149 /* Debug */,
+				1C908C9E23B0214C9B9B55CCB6C90A02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48BAE9D7ED27D24D609F7095B99435B6 /* Build configuration list for PBXNativeTarget "Pods-FundooHRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA99F80105029B558731F28BEC7AE0B /* Debug */,
+				0FB935ED7EE1BE7E4364712205488321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA6B53133DE1DA14D5F93AB4CFE1F84 /* Build configuration list for PBXNativeTarget "Pods-FundooHRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944588A0E39C2A142E72193CF851E20D /* Debug */,
+				187C04B88F4DE5B448FE33D1D085275F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5586F61D89325A3279A98AD5C2E0EAB /* Build configuration list for PBXNativeTarget "Pods-FundooHR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16C761E00F57CB8882FAD3B81A00E1E3 /* Debug */,
+				05BA9C71889FFD7F05BAD97911AB920E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
