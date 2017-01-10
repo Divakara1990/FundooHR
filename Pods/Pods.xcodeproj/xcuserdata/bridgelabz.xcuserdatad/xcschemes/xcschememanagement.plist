@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-FundooHR.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>25C6B1DB5BA1FFE408B93425DC034AEB</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2F3211618C2713D7CEB1C5B13A813164</key>
+		<key>9E5E8165EF14330BD3904A4E4BE762ED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5A41317F0CA481226C647E802BDCDF70</key>
+		<key>D665554611A681561B157658FBD1AD94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E715A99A4E893BC15B4229D7627F5B46</key>
 		<dict>
 			<key>primary</key>
 			<true/>

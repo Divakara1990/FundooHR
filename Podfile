@@ -4,9 +4,9 @@
 target 'FundooHR' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
+ 
   # Pods for FundooHR
-
+  pod 'Alamofire', :git => 'https://github.com/Homely/Alamofire.git', :branch => 'ios8'
   target 'FundooHRTests' do
     inherit! :search_paths
     # Pods for testing

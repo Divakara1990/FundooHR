@@ -1,3 +1,22 @@
-PODFILE CHECKSUM: 55b4c9d421bd5e08aae3556a598666a115a65090
+PODS:
+  - Alamofire (4.0.1)
 
-COCOAPODS: 1.0.1
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Homely/Alamofire.git`, branch `ios8`)
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :branch: ios8
+    :git: https://github.com/Homely/Alamofire.git
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :commit: 276386cf230cb7e91964ca0021e7ddfa58d2439c
+    :git: https://github.com/Homely/Alamofire.git
+
+SPEC CHECKSUMS:
+  Alamofire: d8ab1487ca8accacde5d0c65ae8144bdf9a264b8
+
+PODFILE CHECKSUM: 094119156261ebccf733b96cfcf36f92978456e6
+
+COCOAPODS: 1.1.1

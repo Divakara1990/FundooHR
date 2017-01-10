@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
@@ -16,7 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-
+    
+    var LoginVM : LoginViewModel?
+    var loginToken : String?
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -70,8 +73,63 @@ class ViewController: UIViewController {
         }
         
     }
-
-
-
+    
+    
+    @IBAction func LoginButtonPressed(_ sender: Any)
+    {
+        let email = emailField.text
+        let password = passwordField.text
+        
+        //Checking the User as entered the Username & password
+        if (email?.isEmpty)! || (password?.isEmpty)!
+        {
+            //if No displaying the alert msg.
+            let alertView = UIAlertController.init(title: "YOU MISSED SOMETHING !!!!!", message: "Plesae Enter Email OR Password !!!!!", preferredStyle: UIAlertControllerStyle.alert)
+            let action = UIAlertAction.init(title: "Ok", style: .default, handler: nil)
+            alertView.addAction(action)
+            self.present(alertView, animated: true, completion:nil)
+            return
+        }
+        //sending credentials to the Viewmodel
+        LoginVM = LoginViewModel()
+        LoginVM?.loginVC = self
+        LoginVM?.Email = email!
+        LoginVM?.PasWrd = password!
+        LoginVM?.callLoginVM()
+       
+    }
+    
+    
+    //validating the user from the response which v got from the RestApi
+    func validateLogin(tokn1 : String , status :Int, mess : String ) -> Void
+    {
+        if status == 200
+        {
+            loginToken = tokn1
+            self.saveInCoreData(saveToken: tokn1)
+            self.performSegue(withIdentifier: "gotoDashboard", sender: nil)
+        }
+    }
+    
+    func saveInCoreData(saveToken : String) -> Void{
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let user = LoginToken1(context : context)
+        user.mytoken = saveToken
+        
+        (UIApplication.shared.delegate as! AppDelegate).saveContext()
+    }
+    
+    func errorMessage() -> Void{
+        let alertView = UIAlertController.init(title: "Error ", message : "------", preferredStyle: UIAlertControllerStyle.alert)
+        let action = UIAlertAction.init(title: "ok", style: .default, handler :nil)
+        alertView.addAction(action)
+        self.present(alertView, animated: true, completion :nil)
+    }
 }
+    
+
+
+
+
 

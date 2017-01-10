@@ -10,7 +10,6 @@ import UIKit
 
 class EngineerDetails: NSObject
 {
-    var engiImage : UIImage?
     var engName : String?
     var engJob : String?
     var engCompany : String?
@@ -18,9 +17,9 @@ class EngineerDetails: NSObject
     var engEmail : String?
     
     
-    init(EngineerImage Image : UIImage, EngineerName Name : String, EngineerJob Job : String, EngineerCompany Company : String, EngineerMobile Mobile : String, EngineerEmail  Email : String)
+    init(EngineerName Name : String, EngineerJob Job : String, EngineerCompany Company : String, EngineerMobile Mobile : String, EngineerEmail  Email : String)
     {
-        self.engiImage = Image
+       
         self.engName = Name
         self.engJob = Job
         self.engCompany = Company

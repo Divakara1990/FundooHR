@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D934354E4893AC86FAD2580A82791448F3C1F639",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D934354E4893AC86FAD2580A82791448F3C1F639" : 9223372036854775807,
+    "AB0CBAC2336D6EC4E6CB23F152F86577FFF34EF3" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "08D9022A-0FB9-44E6-8A31-CB9BD1BC7AD9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D934354E4893AC86FAD2580A82791448F3C1F639" : "FundooHR\/",
+    "AB0CBAC2336D6EC4E6CB23F152F86577FFF34EF3" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FundooHR",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FundooHR.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Divakara1990\/Objective-C.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AB0CBAC2336D6EC4E6CB23F152F86577FFF34EF3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Divakara1990\/FundooHR.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D934354E4893AC86FAD2580A82791448F3C1F639"
+    }
+  ]
+}

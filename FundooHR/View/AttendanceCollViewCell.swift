@@ -11,5 +11,8 @@ import UIKit
 class AttendanceCollViewCell: UICollectionViewCell {
     
     @IBOutlet weak var collLabel: UILabel!
-    @IBOutlet weak var collCheckbox: UIView!
+    
+     
+    
+    
 }

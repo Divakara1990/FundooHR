@@ -11,10 +11,13 @@ import UIKit
 class DashboardViewController: UIViewController {
 
     
-    @IBOutlet weak var slideBarBtn: UIButton!
+    @IBOutlet weak var slideBarButton: UIButton!
+   
     @IBOutlet weak var secondaryView: UIView!
     @IBOutlet weak var dashboardCollection: UICollectionView!
     @IBOutlet weak var dashLabel: UILabel!
+    
+    var EngineerViewModelObj = EngineerDetailsViewModel()
     
     var dashBoardData = ["Attendance Summary","Attendance Fallout","Leave Summary","Engineers","Clients","Reports"]
     var dashData : [String]!
@@ -24,11 +27,12 @@ class DashboardViewController: UIViewController {
         super.viewDidLoad()
         
         //gives the seperate view, SlideBar.
-        slideBarBtn.addTarget(self.revealViewController(), action:
+        slideBarButton.addTarget(self.revealViewController(), action:
             #selector(SWRevealViewController.revealToggle(_:)),
             for: .touchUpInside)
         
         self.dashboardCollection.dataSource = self
+        self.dashboardCollection.delegate = self
         self.secondaryView.layer.shadowColor = UIColor.black.cgColor
         self.secondaryView.layer.shadowOpacity = 0.5
         self.secondaryView.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
@@ -48,7 +52,6 @@ class DashboardViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -61,7 +64,7 @@ class DashboardViewController: UIViewController {
 
 }
 
-extension DashboardViewController : UICollectionViewDataSource
+extension DashboardViewController : UICollectionViewDataSource, UICollectionViewDelegate
 {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -71,25 +74,31 @@ extension DashboardViewController : UICollectionViewDataSource
         return dashData.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashBoard Cells", for: indexPath) as! DashCollectionViewCell
-        
         cell.dashBoardHeading?.text = dashData[indexPath.row]
-    
         cell.contentView.layer.cornerRadius = 8
         cell.contentView.layer.borderWidth = 1.0
         cell.contentView.layer.borderColor = UIColor.cyan.cgColor
-        
         cell.contentView.backgroundColor = UIColor.white
-        //cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOpacity = 0.6
         cell.layer.shadowOffset = CGSize(width: 0.0, height: 0.2)
         cell.layer.shadowRadius = 2.0
         cell.layer.masksToBounds = false
-        //cell.layer.borderColor = UIColor.cyan.cgColor
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        if indexPath.row == 3 {
+         
+                self.performSegue(withIdentifier: "gotoEngineers", sender: nil)
+        }
+        else if indexPath.row == 5 {
+            self.performSegue(withIdentifier: "gotoReports", sender: nil)
+        }
+        
+    }
+
     
 }
 
