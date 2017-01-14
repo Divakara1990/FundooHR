@@ -35,11 +35,18 @@
 		0A8266351E20FF92006A9396 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8266341E20FF92006A9396 /* LoginService.swift */; };
 		0AA562871E1137FF0006F970 /* SalaryCollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA562861E1137FF0006F970 /* SalaryCollViewCell.swift */; };
 		0AAD3A411E1BD8040048563C /* InvoiceCollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAD3A401E1BD8040048563C /* InvoiceCollViewCell.swift */; };
+		0AAD73A81E24C5C80012DAA3 /* AttendanceReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAD73A71E24C5C80012DAA3 /* AttendanceReportVC.swift */; };
+		0AAD73AA1E24C6AB0012DAA3 /* AttRepCollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAD73A91E24C6AB0012DAA3 /* AttRepCollCell.swift */; };
+		0AAD73AC1E24C90D0012DAA3 /* AttTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAD73AB1E24C90D0012DAA3 /* AttTabCell.swift */; };
 		0AB0D1271E0F90C3006AD8C3 /* ReportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0D1261E0F90C3006AD8C3 /* ReportCollectionViewCell.swift */; };
 		0AB0D1291E0F9D6D006AD8C3 /* ReportCollectionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0D1281E0F9D6D006AD8C3 /* ReportCollectionClass.swift */; };
 		0AB0D12B1E0FA4DD006AD8C3 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0D12A1E0FA4DD006AD8C3 /* ReportsViewController.swift */; };
 		0AB1E7871E122B80003EC169 /* AttendanceReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1E7861E122B80003EC169 /* AttendanceReportViewController.swift */; };
 		0AB1E7D71E12974A003EC169 /* AttendanceCollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1E7D61E12974A003EC169 /* AttendanceCollViewCell.swift */; };
+		0AB76BC81E274F47005CD159 /* paySlipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB76BC71E274F47005CD159 /* paySlipModel.swift */; };
+		0AB76BCA1E2751C8005CD159 /* SalaryPaySlipVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB76BC91E2751C8005CD159 /* SalaryPaySlipVM.swift */; };
+		0AB76BCC1E27526D005CD159 /* ReportsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB76BCB1E27526D005CD159 /* ReportsController.swift */; };
+		0AB76BCE1E275526005CD159 /* FetchReportsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB76BCD1E275526005CD159 /* FetchReportsDetails.swift */; };
 		0AB8F04A1E07B02200358CCC /* DashCollectionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB8F0491E07B02200358CCC /* DashCollectionClass.swift */; };
 		0ABA378E1E01710B0013A218 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABA378D1E01710B0013A218 /* SWRevealViewController.m */; };
 		0AC092401E09464F00C2BD3A /* EngineerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0923F1E09464F00C2BD3A /* EngineerDetails.swift */; };
@@ -113,11 +120,18 @@
 		0A8266341E20FF92006A9396 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		0AA562861E1137FF0006F970 /* SalaryCollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalaryCollViewCell.swift; sourceTree = "<group>"; };
 		0AAD3A401E1BD8040048563C /* InvoiceCollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceCollViewCell.swift; sourceTree = "<group>"; };
+		0AAD73A71E24C5C80012DAA3 /* AttendanceReportVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceReportVC.swift; sourceTree = "<group>"; };
+		0AAD73A91E24C6AB0012DAA3 /* AttRepCollCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttRepCollCell.swift; sourceTree = "<group>"; };
+		0AAD73AB1E24C90D0012DAA3 /* AttTabCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttTabCell.swift; sourceTree = "<group>"; };
 		0AB0D1261E0F90C3006AD8C3 /* ReportCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCollectionViewCell.swift; sourceTree = "<group>"; };
 		0AB0D1281E0F9D6D006AD8C3 /* ReportCollectionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCollectionClass.swift; sourceTree = "<group>"; };
 		0AB0D12A1E0FA4DD006AD8C3 /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
 		0AB1E7861E122B80003EC169 /* AttendanceReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceReportViewController.swift; sourceTree = "<group>"; };
 		0AB1E7D61E12974A003EC169 /* AttendanceCollViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceCollViewCell.swift; sourceTree = "<group>"; };
+		0AB76BC71E274F47005CD159 /* paySlipModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paySlipModel.swift; sourceTree = "<group>"; };
+		0AB76BC91E2751C8005CD159 /* SalaryPaySlipVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalaryPaySlipVM.swift; sourceTree = "<group>"; };
+		0AB76BCB1E27526D005CD159 /* ReportsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsController.swift; sourceTree = "<group>"; };
+		0AB76BCD1E275526005CD159 /* FetchReportsDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchReportsDetails.swift; sourceTree = "<group>"; };
 		0AB8F0491E07B02200358CCC /* DashCollectionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashCollectionClass.swift; sourceTree = "<group>"; };
 		0ABA378B1E01710B0013A218 /* FundooHR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "FundooHR-Bridging-Header.h"; path = "../FundooHR-Bridging-Header.h"; sourceTree = "<group>"; };
 		0ABA378C1E01710B0013A218 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../SWRevealViewController.h; sourceTree = "<group>"; };
@@ -193,6 +207,7 @@
 			children = (
 				0AC092471E095C9600C2BD3A /* FetchEngineerDetails.swift */,
 				0A8266341E20FF92006A9396 /* LoginService.swift */,
+				0AB76BCD1E275526005CD159 /* FetchReportsDetails.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -260,6 +275,7 @@
 				0AC0923F1E09464F00C2BD3A /* EngineerDetails.swift */,
 				0AF49B8B1E14DA3E00EA64A8 /* CheckList.swift */,
 				0A16007F1E1F4CBF0014DC80 /* protocols.swift */,
+				0AB76BC71E274F47005CD159 /* paySlipModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -269,6 +285,7 @@
 			children = (
 				0AC092431E095C0100C2BD3A /* EngineerDetailsController.swift */,
 				0A8266321E20FF79006A9396 /* LoginController.swift */,
+				0AB76BCB1E27526D005CD159 /* ReportsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,6 +295,7 @@
 			children = (
 				0AC092411E095BDB00C2BD3A /* EngineerDetailsViewModel.swift */,
 				0A7F4EBD1E20C66500A3D6FA /* LoginViewModel.swift */,
+				0AB76BC91E2751C8005CD159 /* SalaryPaySlipVM.swift */,
 			);
 			name = ViewModel;
 			path = FundooHR/ViewModel;
@@ -310,6 +328,9 @@
 				0A6FCDDA1E1A6C2A00A1187E /* DownloadIRViewController.swift */,
 				0AAD3A401E1BD8040048563C /* InvoiceCollViewCell.swift */,
 				0A781B6F1E1BDC0C0047BE71 /* invoiceTableViewCell.swift */,
+				0AAD73A71E24C5C80012DAA3 /* AttendanceReportVC.swift */,
+				0AAD73A91E24C6AB0012DAA3 /* AttRepCollCell.swift */,
+				0AAD73AB1E24C90D0012DAA3 /* AttTabCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -681,15 +702,21 @@
 				0AC092441E095C0100C2BD3A /* EngineerDetailsController.swift in Sources */,
 				0ACE151F1E0BAA3500BE4455 /* EngineerTabelViewCell.swift in Sources */,
 				0AAD3A411E1BD8040048563C /* InvoiceCollViewCell.swift in Sources */,
+				0AB76BC81E274F47005CD159 /* paySlipModel.swift in Sources */,
 				0A1600801E1F4CBF0014DC80 /* protocols.swift in Sources */,
 				0A4D1D3C1DFE8E6900CD1C29 /* SearchViewController.swift in Sources */,
+				0AB76BCA1E2751C8005CD159 /* SalaryPaySlipVM.swift in Sources */,
 				0A0067641E04001200586B48 /* SlideMenuViewController.swift in Sources */,
 				0A32BA9C1DF98B5200DA1AD6 /* TextField.swift in Sources */,
 				0A7F4EBE1E20C66500A3D6FA /* LoginViewModel.swift in Sources */,
+				0AB76BCC1E27526D005CD159 /* ReportsController.swift in Sources */,
 				0A6FCDD91E1A6C1200A1187E /* DownloadARViewController.swift in Sources */,
+				0AB76BCE1E275526005CD159 /* FetchReportsDetails.swift in Sources */,
 				0AB0D12B1E0FA4DD006AD8C3 /* ReportsViewController.swift in Sources */,
+				0AAD73AA1E24C6AB0012DAA3 /* AttRepCollCell.swift in Sources */,
 				0ACC07271DF82A9D005BE968 /* ViewController.swift in Sources */,
 				0ACC07251DF82A9D005BE968 /* AppDelegate.swift in Sources */,
+				0AAD73A81E24C5C80012DAA3 /* AttendanceReportVC.swift in Sources */,
 				0A021B381E163F4700304AC3 /* InvoiceReportViewController.swift in Sources */,
 				0A0067681E04041300586B48 /* DashCollectionViewCell.swift in Sources */,
 				0A73FCE31E0FEC7900C4B670 /* SalaryPayslipViewController.swift in Sources */,
@@ -700,6 +727,7 @@
 				0A00671C1E03AA4B00586B48 /* SearchCollectionClass.swift in Sources */,
 				0AB1E7871E122B80003EC169 /* AttendanceReportViewController.swift in Sources */,
 				0AB0D1291E0F9D6D006AD8C3 /* ReportCollectionClass.swift in Sources */,
+				0AAD73AC1E24C90D0012DAA3 /* AttTabCell.swift in Sources */,
 				0A6FCDDB1E1A6C2A00A1187E /* DownloadIRViewController.swift in Sources */,
 				0A781B701E1BDC0C0047BE71 /* invoiceTableViewCell.swift in Sources */,
 				0AFB11BA1E2397C7001AAF74 /* FundooHR.xcdatamodeld in Sources */,

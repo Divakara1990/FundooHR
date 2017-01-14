@@ -10,7 +10,7 @@ import UIKit
 
 class SalaryCollViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var collCheckBox: UIButton!
-    @IBOutlet weak var tickButton: UIButton!
+   
+    @IBOutlet weak var cellCB: UIButton!
     @IBOutlet weak var collLabel: UILabel!
 }

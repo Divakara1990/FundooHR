@@ -13,26 +13,24 @@ class InvoiceReportViewController: UIViewController
 {
     @IBOutlet weak var invoiceCollView: UICollectionView!
 
-    @IBOutlet weak var invoiceTableVIew: UITableView!
+    
     
     var companies: [String] = ["BridgeLabz","GreyTip","Meru","Valuepitch","Craftsville","Nect Education","Finacus"]
     
     var companiesData : [String]!
     
-    var companiesFieldName : String? = nil
+    var names: [String] = ["Amith","Anand","Eshwar","Zakki","Vishwas","Bushan","Greshma","Hema","John","Jeeva","Kamal","Laxman","Ajith","Frenzy","Indhu","Manoj","Naveen","Divakar YN", "Chandra", "Darshan", "Dilip", "Diganth","Chethan", "Charan", "Ramesh", "Rakesh","Roopesh", "Rajesh", "Santhosh", "Sanjay","Sree Prasad", "Sunith", "Swamy", "Sugam","Pramodh", "Punith", "Pretham", "Pankaj"]
+    var nameData: [String]!
     
-//    var names: [String] = ["Amith","Anand","Eshwar","Zakki","Vishwas","Bushan","Greshma","Hema","John","Jeeva","Kamal","Laxman","Ajith","Frenzy","Indhu","Manoj","Naveen","Divakar YN", "Chandra", "Darshan", "Dilip", "Diganth","Chethan", "Charan", "Ramesh", "Rakesh","Roopesh", "Rajesh", "Santhosh", "Sanjay","Sree Prasad", "Sunith", "Swamy", "Sugam","Pramodh", "Punith", "Pretham", "Pankaj"]
-//    var nameData: [String]!
+   // var companiesFieldName : String? = nil
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.invoiceCollView.dataSource = self
-        self.invoiceCollView.delegate = self
-//        self.invoiceTableView.delegate = self
-//        self.invoiceTableView.dataSource = self
+       
         companiesData = companies
-
+        nameData = names
                // Do any additional setup after loading the view.
     }
 
@@ -88,7 +86,7 @@ class InvoiceReportViewController: UIViewController
 
 }
 
-extension InvoiceReportViewController : UICollectionViewDataSource, UICollectionViewDelegate
+extension InvoiceReportViewController : UICollectionViewDataSource, UICollectionViewDelegate, UITableViewDelegate, UITableViewDataSource
 {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -112,6 +110,44 @@ extension InvoiceReportViewController : UICollectionViewDataSource, UICollection
         return cell
     }
     
+    
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return names.count
+    }
+    
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! invoiceTableViewCell
+//        cell.labInTabCel.text = "0 Leave"
+//        cell.labInTabCel?.textAlignment = .right
+        cell.textLabel?.text = nameData[indexPath.row]
+        //cell.textLabel?.textAlignment = .justified
+        //cell.checkButton?.contentEdgeInsets.left
+        cell.textLabel?.textColor = UIColor.darkGray
+        cell.textLabel?.font = UIFont(name:"Avenir", size:12)
+        cell.imageView?.image = #imageLiteral(resourceName: "unchecked.png")
+        
+        return cell
+    }
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print("You selected cell #\(indexPath.row)!")
+//        var txt : String?
+//        txt = (names[indexPath.row])
+//        print(txt!)
+//        let numberOfSections = self.tableViewInColl.numberOfSections
+//        let numberOfRows = self.tableViewInColl.numberOfRows(inSection: numberOfSections-1)
+//        
+//        //        searchCollection.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
+//        
+//        let indexPath = IndexPath(row: numberOfRows-1 , section: numberOfSections-1)
+//        self.tableViewInColl.scrollToRow(at: indexPath, at: UITableViewScrollPosition.middle, animated: true)
+//        //invoke the searchBar method
+//        
+//        tableViewInColl.reloadData()
+//    }
+//
     
 }
 

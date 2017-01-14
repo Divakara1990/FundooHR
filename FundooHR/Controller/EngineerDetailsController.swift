@@ -10,7 +10,7 @@ import UIKit
 
 class EngineerDetailsController: NSObject, controllerDelegate
 {
-   var fetchEngineerDetailsVar = FetchEngineerDetails()
+   //var fetchEngineerDetailsVar = FetchEngineerDetails()
     var engineerDetailsVM : EngineerDetailsViewModel?
     var fetchEngineerDetailsVAR: FetchEngineerDetails?
     

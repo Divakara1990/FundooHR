@@ -22,6 +22,9 @@ class DashboardViewController: UIViewController {
     var dashBoardData = ["Attendance Summary","Attendance Fallout","Leave Summary","Engineers","Clients","Reports"]
     var dashData : [String]!
     
+//    var date : String?
+//    var date1 = Date()
+    
     var fieldName : String? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,6 +78,9 @@ extension DashboardViewController : UICollectionViewDataSource, UICollectionView
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashBoard Cells", for: indexPath) as! DashCollectionViewCell
+        
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "dd MMMM YYYY"
         cell.dashBoardHeading?.text = dashData[indexPath.row]
         cell.contentView.layer.cornerRadius = 8
         cell.contentView.layer.borderWidth = 1.0
@@ -84,6 +90,11 @@ extension DashboardViewController : UICollectionViewDataSource, UICollectionView
         cell.layer.shadowOffset = CGSize(width: 0.0, height: 0.2)
         cell.layer.shadowRadius = 2.0
         cell.layer.masksToBounds = false
+//        if indexPath.row == 0 || indexPath.row == 1 || indexPath.row == 2{
+//            date1 = Date.init(timeIntervalSince1970: Double((dashVM?.jsonTimeStamp)! / 1000))
+//            print(date1!)
+//            cell.dateLabel.text = formatter.string(from: date1! as Date)
+//        }
         return cell
     }
     

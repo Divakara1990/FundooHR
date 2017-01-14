@@ -10,7 +10,8 @@ import UIKit
 
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate
 {
-    @IBOutlet weak var searchCollection: UICollectionView!
+    
+    @IBOutlet weak var searchCollection: SearchCollectionClass!
     @IBOutlet weak var searchTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var slideMenu: UIButton!
@@ -34,7 +35,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         EngineerViewModelObj?.callFromViewModelToController()
         self.finalEmpData = EngineerViewModelObj?.sortedArray
 
-//        data = ["Amith","Anand","Eshwar","Zakki","Vishwas","Bushan","Greshma","Hema","John","Jeeva","Kamal","Laxman","Ajith","Frenzy","Indhu","Manoj","Naveen","Divakar YN", "Chandra", "Darshan", "Dilip", "Diganth","Chethan", "Charan", "Ramesh", "Rakesh","Roopesh", "Rajesh", "Santhosh", "Sanjay","Sree Prasad", "Sunith", "Swamy", "Sugam","Pramodh", "Punith", "Pretham", "Pankaj"]
         self.searchTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         //gives the seperate view, SlideBar.
@@ -50,12 +50,9 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.searchBar.layer.borderWidth = 1
         self.searchBar.layer.cornerRadius = 20.0
         self.searchBar.clipsToBounds = true
-        searchCollection.dataSource = self
+        //searchCollection.dataSource = self
         searchBar.delegate = self
         
-        //print(data.sorted(by: {$0 < $1}))
-        //filteredData = data.sorted(by: {$0 < $1})
-        // Do any additional setup after loading the view.
     }
     
     func reloadFinalData()
@@ -92,24 +89,60 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         var txt : String?
         txt = (alphabets[indexPath.row])
          print(txt!)
-        let numberOfSections = self.searchTableView.numberOfSections
-        let numberOfRows = self.searchTableView.numberOfRows(inSection: numberOfSections-1)
+//        let numberOfSections = self.searchTableView.numberOfSections
+//        let numberOfRows = self.searchTableView.numberOfRows(inSection: numberOfSections-1)
         let Cell = tableView.cellForRow(at: indexPath)
             Cell?.textLabel?.textColor = UIColor.blue
 //        searchCollection.scrollToItem(at: indexPath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: true)
         
-        let indexPath = IndexPath(row: numberOfRows-1 , section: numberOfSections-1)
-        self.searchTableView.scrollToRow(at: indexPath, at: UITableViewScrollPosition.middle, animated: true)
+//        let indexPath = IndexPath(row: numberOfRows-1 , section: numberOfSections-1)
+//        self.searchTableView.scrollToRow(at: indexPath, at: UITableViewScrollPosition.middle, animated: true)
         //invoke the searchBar method
-        searchBar(searchBar, textDidChange: txt!)
+        //searchBar(searchBar, textDidChange: txt!)
+        
+        alphabetClicked(alpha: txt!)
         searchCollection.reloadData()
     }
+    
+    
+    var alphabetArray = [String]()
+    var bol : Bool = false
+    func alphabetClicked(alpha : String){
+
+        if bol {
+            finalEmpData = []
+            alphabetArray = []
+            finalEmpData = EngineerViewModelObj?.sortedArray
+           // searchCollection.reloadData()
+        }
+        var x1 : Int = 0
+       // let res : String?
+        for _ in finalEmpData!{
+            let obj = (finalEmpData?[x1])! as EngineerDetails
+            let na = obj.engName
+            print(na!)
+            if (na?.hasPrefix(alpha))!{
+                let res : String = na!
+                 self.alphabetArray.append(res)
+            }
+             x1 += 1
+            print(alphabetArray)
+        }
+        let filteredByNameArray = finalEmpData?.filter {
+            alphabetArray.contains($0.engName!)
+        }
+        finalEmpData = filteredByNameArray
+        bol = true
+        searchCollection.reloadData()
+    }
+    
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
     
     let deselectedCell = tableView.cellForRow(at: indexPath as IndexPath)!
     deselectedCell.textLabel?.textColor = UIColor.black
     
+       // alphabetClicked(alpha: <#T##String#>)
     }
 
     override func didReceiveMemoryWarning()
@@ -138,31 +171,17 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
             return dataString.range(of: searchText, options: .caseInsensitive) != nil
         })
-        
-        let filteredByNameArray = finalEmpData?.filter {
-            finalArr.contains($0.engName!)
+        if searchText.isEmpty == true{
+            finalEmpData = EngineerViewModelObj?.sortedArray
+            searchCollection.reloadData()
         }
-        //finalEmpData = []
-        finalEmpData = filteredByNameArray
-        searchCollection.reloadData()
-        //        print("filteredByNameArray123456 is as follows \(filteredByNameArray)")
-//        let obj1 : [EngineerDetails] = filteredByNameArray!
-//        print("objects is\(obj1)")
-//        print("fetched Names after searching is \(finalArr)")
-//        
-//        var y : Int = 0
-//        for _ in finalArr{
-//            let str = (finalArr[y]) as String
-//                let z : Int = 0
-//            for _ in finalArr{
-//                    if str == ((finalEmpData?[z])! as EngineerDetails).engName{
-//                        print("NAme Exists\(str)")
-//                        searchCollection.reloadData()
-//                    }
-//            }
-//            y += 1
-//        }
-               // searchCollection.reloadData()
+        else{
+                let filteredByNameArray = finalEmpData?.filter {
+                    finalArr.contains($0.engName!)
+                }
+                finalEmpData = filteredByNameArray
+                searchCollection.reloadData()
+            }
     }
 }
 

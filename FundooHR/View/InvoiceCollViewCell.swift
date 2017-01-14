@@ -38,6 +38,7 @@ extension InvoiceCollViewCell : UITableViewDelegate, UITableViewDataSource
         cell.textLabel?.textColor = UIColor.darkGray;
         
         cell.textLabel?.font = UIFont(name:"Avenir", size:12)
+        cell.imageView?.image = #imageLiteral(resourceName: "unchecked.png")
         return cell
     }
     
