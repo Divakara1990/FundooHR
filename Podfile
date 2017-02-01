@@ -7,6 +7,10 @@ target 'FundooHR' do
  
   # Pods for FundooHR
   pod 'Alamofire', :git => 'https://github.com/Homely/Alamofire.git', :branch => 'ios8'
+  pod 'Firebase'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Database'
+  
   target 'FundooHRTests' do
     inherit! :search_paths
     # Pods for testing

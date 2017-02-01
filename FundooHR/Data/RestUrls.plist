@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>salaryslipurl</key>
+	<string>http://192.168.0.10:3000/readAllEmployee</string>
+	<key>attendanceurl</key>
+	<string>http://192.168.0.10:3000/readInternEmployee</string>
+	<key>searchurl</key>
+	<string>http://192.168.0.10:3000/searchEmployeeByName</string>
+	<key>loginurl</key>
+	<string>http://192.168.0.10:3000/login</string>
+</dict>
+</plist>

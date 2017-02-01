@@ -10,16 +10,25 @@ import UIKit
 
 class DownloadIRViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
+    //outlet fo rthe tableview
     @IBOutlet weak var tableView: UITableView!
-    var array = ["meru.zip","craftsville.zip","bridgelabz.zip","greytip.zip","nexteducation.zip"]
-    var arrayData : [String]?
+    
+    //outlet to display the current date in view
+    @IBOutlet weak var todaysDate1: UILabel!
+    
+    //variable for array of string type
+    var mArray = ["meru.zip","craftsville.zip","bridgelabz.zip","greytip.zip","nexteducation.zip"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //setting datasource and delegates of the tableview
         tableView.dataSource = self
         tableView.delegate = self
-        arrayData = array
-        // Do any additional setup after loading the view.
+        
+        todaysDate1.text = CurrentDate
+
     }
 
    
@@ -30,12 +39,11 @@ class DownloadIRViewController: UIViewController,UITableViewDataSource,UITableVi
     
 
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return array.count
+        return mArray.count
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell:UITableViewCell = self.tableView!.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
-        cell.textLabel?.text = self.arrayData?[indexPath.row]
-        // cell.textLabel?.adjustsFontSizeToFitWidth = true
+        cell.textLabel?.text = self.mArray[indexPath.row]
         cell.textLabel?.textColor = UIColor.darkGray;
         cell.textLabel?.textAlignment = .center
         
@@ -44,15 +52,11 @@ class DownloadIRViewController: UIViewController,UITableViewDataSource,UITableVi
         
         return cell
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func backButtonClicked(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
+        
     }
-    */
-
+    
 }

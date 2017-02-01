@@ -2,6 +2,9 @@
 //  LoginViewModel.swift
 //  FundooHR
 //
+//  1. viewmodel for the login viewcontroller in MVVM structure
+//  2. contains function to call from viewmodel to controller
+//
 //  Created by BridgeLabz on 07/01/17.
 //  Copyright © 2017 BridgeLabz. All rights reserved.
 //
@@ -9,43 +12,66 @@
 import UIKit
 
 class LoginViewModel: NSObject, LoginVMProtocol {
-
     
-    var Email = String()
-    var PasWrd = String()
+    //variable to store the email
+    var mEmail = String()
     
-    var LoginControllerObj : LoginController?
-    var loginVC : ViewController?
+    //variable to store the password
+    var mPasWrd = String()
     
-    var tokn : String?
-    var loginstatus : Int?
-    var loginmsg : String?
+    //variable to store the controller
+    var mLoginControllerObj : LoginController?
     
-    func callLoginVM()
+    //variable to hold the viewcontroller
+    var mLoginVCPro : LoginVCProtocol?
+    
+    //variable to store the token
+    var mTokn : String?
+    
+    //variable to store the login status
+    var mLoginstatus : Int?
+    
+    //variable to store the login message
+    var mLoginmsg : String?
+    
+    //constructor of the loginviewmodel with two parameters, inside creates the object of the LoginController by passing the loginviewmodel object to the LoginController
+    init(loginVCObj : LoginVCProtocol, emailId : String, password : String)
     {
-        LoginControllerObj = LoginController()
-        LoginControllerObj?.del = self
-        LoginControllerObj?.callLoginController(email: Email, password: PasWrd)
+        super.init()
+        mLoginVCPro = loginVCObj
+        mEmail = emailId
+        mPasWrd = password
+        //creating the object of the LoginCOntroller by passing the self object
+        mLoginControllerObj = LoginController(loginVMProtocolObj : self)
     }
     
-    func userLoginStatus(token1: String, status1: Int, message1: String)
+    //function invoked by viewcontroller
+    func sendLoginCredentials()
     {
-        self.tokn = token1
-        self.loginstatus = status1
-        self.loginmsg = message1
+        //calling the function of controller and passing the email and password
+        mLoginControllerObj?.sendCredentials(email: mEmail, password: mPasWrd)
+    }
+    
+    //function to check the data received from controller
+    func checkReceivedLoginStatus(token1: String, status1: Int, message1: String)
+    {
+        self.mTokn = token1
+        self.mLoginstatus = status1
+        self.mLoginmsg = message1
         
-        if tokn != nil && loginstatus != 0 && loginmsg != nil
+        if mTokn != nil && mLoginstatus != 0 && mLoginmsg != nil
         {
-            loginVC?.validateLogin(tokn1 :tokn!, status : loginstatus!, mess : loginmsg!)
+            mLoginVCPro?.saveReceivedToken(tokn1 :mTokn!, status : mLoginstatus!, mess : mLoginmsg!)
         }
         else
         {
-            self.callLoginVM()
+            self.sendLoginCredentials()
         }
     }
     
+    //function if any error occurs
     func errorMessageVM() -> Void{
-        loginVC?.errorMessage()
+        mLoginVCPro?.errorMessage()
     }
     
 }
