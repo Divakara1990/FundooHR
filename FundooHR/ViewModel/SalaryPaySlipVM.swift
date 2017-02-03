@@ -13,8 +13,8 @@
 
 import UIKit
 
-class SalaryPaySlipVM: NSObject, SalaryPaySlipVMProtocol{
-   
+class SalaryPaySlipVM: NSObject, SalaryPaySlipVMProtocol
+{
     //variable holds viewcontroller
     var mSalVCObj : SalaryPayslipViewController?
     
@@ -25,10 +25,10 @@ class SalaryPaySlipVM: NSObject, SalaryPaySlipVMProtocol{
     var mDelegateA:SalaryPaySlipControllerProtocol?
     
     //variable to hold the object of class payslipmodel
-    var mEmpSalArray : [paySlipModel] = []
+    var mEmpSalArray : [PaySlipModel] = []
     
     //variable to store the sorted array
-    var mSortArray : [paySlipModel] = []
+    var mSortArray : [PaySlipModel] = []
     
     
     //function called from viewcontroller
@@ -36,25 +36,24 @@ class SalaryPaySlipVM: NSObject, SalaryPaySlipVMProtocol{
     {
         //creating the object of controller
         mReportControllerVar = ReportsController()
-        mReportControllerVar?.mrepContVMVar = self
-        mReportControllerVar?.pdelegate2A = self
+        mReportControllerVar?.mRepContVMVar = self
+        mReportControllerVar?.pSalaryVMPro = self
         //invoking the method which is in controller
         mReportControllerVar?.fetchSalaryDetails()
     }
     
     
     //receives the data which comes from controller
-    func receieveSalaryData(salSlipArray array : [paySlipModel]) -> Void
+    func receieveSalaryData(salSlipArray array : [PaySlipModel]) -> Void
     {
         print("ViewModel array is \(array)")
         if array.count >= 1
         {
             mEmpSalArray = array
-            mSortArray = mEmpSalArray.sorted{$0.engName! < $1.engName!}
+            mSortArray = mEmpSalArray.sorted{$0.mEngName! < $1.mEngName!}
             print(mSortArray)
             //invoking the method which is in the viewcontroller
             mSalVCObj?.reloadFinalData()
-            
         }
     }
 }

@@ -10,8 +10,8 @@
 
 import UIKit
 
-class InvoiceCollViewCell: UICollectionViewCell {
-    
+class InvoiceCollViewCell: UICollectionViewCell
+{
     //outlet for the label used inside the cell
     @IBOutlet weak var invoiceCollLabel: UILabel!
     
@@ -20,5 +20,4 @@ class InvoiceCollViewCell: UICollectionViewCell {
     
     //outlet for the checkbox button
     @IBOutlet weak var collCheckBox: UIButton!
-    
 }

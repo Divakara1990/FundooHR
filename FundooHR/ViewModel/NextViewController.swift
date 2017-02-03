@@ -8,32 +8,29 @@
 
 import UIKit
 
-class NextViewController: UIViewController {
-
-    
+class NextViewController: UIViewController
+{
     @IBOutlet weak var employeeID: UILabel!
     
     var id : String?
     var index : Int?
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         employeeID.text = id
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func backButtonClicked(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+    @IBAction func backButtonClicked(_ sender: Any)
+    {
+      _ = self.navigationController?.popViewController(animated: true)
     }
-    
-    
-   
-
- 
 }

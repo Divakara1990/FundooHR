@@ -10,8 +10,8 @@
 
 import UIKit
 
-class AttendanceReportViewModel: NSObject,AttendanceVMProtocol {
-    
+class AttendanceReportViewModel: NSObject,AttendanceVMProtocol
+{
     //variable of attendance report controller class
     var mAttendanceReportController : AttendanceReportController?
     
@@ -48,20 +48,19 @@ class AttendanceReportViewModel: NSObject,AttendanceVMProtocol {
     
     
     //function to receive the data from the controller and aving in this class
-    func sendAttendanceDetails(attendanceArray attRecord : [AttendanceModel], companiesList vmlist : [String]) {
-        
+    func sendAttendanceDetails(attendanceArray attRecord : [AttendanceModel], companiesList vmlist : [String])
+    {
         if attRecord.count >= 1
         {
             mCompaniesArray = vmlist
             mAttendanceArray = attRecord
             mSortArray = mAttendanceArray
             attendanceVCPro?.reloadAttendanceData()
-        }else{
+        }
+        else
+        {
             //if data is not received then again calling the method to fetch the data
             mAttendanceReportController?.fetchAttendanceDetails()
         }
-        
-        
     }
-
 }

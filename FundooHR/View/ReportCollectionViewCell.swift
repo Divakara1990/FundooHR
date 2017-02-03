@@ -11,8 +11,8 @@
 
 import UIKit
 
-class ReportCollectionViewCell: UICollectionViewCell {
-    
+class ReportCollectionViewCell: UICollectionViewCell
+{    
     //outlet for the reports heading
     @IBOutlet weak var reportCellHeading: UILabel!
 }

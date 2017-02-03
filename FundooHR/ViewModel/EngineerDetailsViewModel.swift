@@ -13,22 +13,24 @@
 
 import UIKit
 
-//variable to hold the data received from the controller in model(object) form
-var mEngDetailArray:[EngineerDetails] = []
-
-//variable which holds the controller class type
-var mEngineerDetailsController : EngineerDetailsController?
-
-//variable for delegate
-var pEmpConDelegate:EmployeeControllerProtocol?
-
-//variable to VCProtocol
-var pEmpVCPro : EmployeeVCProtocol?
 
 class EngineerDetailsViewModel: NSObject, EmployeeVMProtocol
 {
+    //variable to hold the data received from the controller in model(object) form
+    var mEngDetailArray:[EngineerDetails] = []
+    
+    //variable which holds the controller class type
+    var mEngineerDetailsController : EngineerDetailsController?
+    
+    //variable for delegate
+    var pEmpConDelegate:EmployeeControllerProtocol?
+    
+    //variable to VCProtocol
+    var pEmpVCPro : EmployeeVCProtocol?
+
     //variable to store the sorted array of object type
     var mSortedDataInVM : [EngineerDetails]?
+    
     
     //constructor which is used to pass the object to the next class
     init(employeeVCObj : EmployeeVCProtocol)
@@ -52,7 +54,7 @@ class EngineerDetailsViewModel: NSObject, EmployeeVMProtocol
         if engRecord.count >= 1
         {
             mEngDetailArray = engRecord
-            mSortedDataInVM = mEngDetailArray.sorted{ $0.engName! < $1.engName! }
+            mSortedDataInVM = mEngDetailArray.sorted{ $0.mEngName! < $1.mEngName! }
             pEmpVCPro?.reloadFinalData()
         }
         else

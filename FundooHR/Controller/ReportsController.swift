@@ -12,31 +12,31 @@ import UIKit
 class ReportsController: NSObject, SalaryPaySlipControllerProtocol{
     
     //variable holds viewmodel class type
-    var mrepContVMVar : SalaryPaySlipVM?
+    var mRepContVMVar : SalaryPaySlipVM?
     
     //variable holds service class
-    var mfetchSalaryDetailsVAR: FetchReportsDetails?
+    var mFetchSalaryDetailsVAR: FetchReportsDetails?
     
     //variables holds protocol delegate
-    var pdelegate2A : SalaryPaySlipVMProtocol?
+    var pSalaryVMPro : SalaryPaySlipVMProtocol?
     
     
     //function invoked from viewModel
     func fetchSalaryDetails()
     {
         //creating an object of service class
-        mfetchSalaryDetailsVAR = FetchReportsDetails()
-        mfetchSalaryDetailsVAR?.pdelegate1A = self
+        mFetchSalaryDetailsVAR = FetchReportsDetails()
+        mFetchSalaryDetailsVAR?.pSalaryControllerPro = self
         //invoking the function of service class to make rest api
-        mfetchSalaryDetailsVAR?.fetchFromFireBase()
+        mFetchSalaryDetailsVAR?.fetchFromFireBase()
     }
     
     
     //receiving the data from the service class
-    func receiveFetchedSalaryDetails(paySlipArray array : [paySlipModel])
+    func receiveFetchedSalaryDetails(paySlipArray array : [PaySlipModel])
     {
         print("controller array is \(array)")
         //sending the received data from services to the viewmodel
-        pdelegate2A?.receieveSalaryData(salSlipArray: array)
+        pSalaryVMPro?.receieveSalaryData(salSlipArray: array)
     }
 }

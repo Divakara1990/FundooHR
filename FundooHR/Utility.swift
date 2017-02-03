@@ -10,8 +10,8 @@
 
 import UIKit
 
-class Utility: NSObject {
-    
+class Utility: NSObject
+{
     //function used to display the error message when the user gives invalid credentials
     func displayErrorMessage(message:String, view:UIViewController)
     {
@@ -29,7 +29,6 @@ class Utility: NSObject {
     {
         let preferences = UserDefaults.standard
         let mEmailIDlabel = preferences.string(forKey: "emailID")
-        print(mEmailIDlabel!)
         return mEmailIDlabel!
     }
     
@@ -39,13 +38,12 @@ class Utility: NSObject {
     {
         let preferences = UserDefaults.standard
         let mToken = preferences.string(forKey: "tokenData")
-        print(mToken!)
         return mToken!
     }
 
     //function to validate the user credentials at client side using regular expression
-    func isValidLoginCredential(emailId:String, password:String) -> Bool {
-        
+    func isValidLoginCredential(emailId:String, password:String) -> Bool
+    {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,20}"
         let passwordRegex = "^([a-zA-Z0-9@*#]{8,15})$"
         
@@ -61,6 +59,4 @@ class Utility: NSObject {
             return false
         }
     }
-    
-    
 }

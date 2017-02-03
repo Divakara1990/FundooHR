@@ -11,11 +11,10 @@
 
 import UIKit
 
-class AttendanceReportController: NSObject, AttendanceSlipControllerProtocol {
-
-
+class AttendanceReportController: NSObject, AttendanceSlipControllerProtocol
+{
     //variable for the service class of fetchattendancereport
-    var mfetchAttendanceDetails : FetchAttendanceReport?
+    var mFetchAttendanceDetails : FetchAttendanceReport?
     
     //variable of datadelegate
     var pAttendanceVMPro : AttendanceVMProtocol?
@@ -25,23 +24,21 @@ class AttendanceReportController: NSObject, AttendanceSlipControllerProtocol {
     {
         super.init()
         pAttendanceVMPro = attendanceVMProtocolObj
-        mfetchAttendanceDetails = FetchAttendanceReport(attendanceControllerObj: self)
-        
+        mFetchAttendanceDetails = FetchAttendanceReport(attendanceControllerObj: self)
     }
 
     
-    
     //function which invoked from the viewmodel to fetch the data
-    func fetchAttendanceDetails() {
-        
+    func fetchAttendanceDetails()
+    {
         //invoking the service class method to fetch the data
-        mfetchAttendanceDetails?.fetchAttendanceReportDetails()
+        mFetchAttendanceDetails?.fetchAttendanceReportDetails()
     }
     
     
     //function to receive the from the services class by using the protocol
-    func sendReceivedAttendanceReportDetails(attendanceArray array : [AttendanceModel], companiesList list : [String]) {
-        
+    func sendReceivedAttendanceReportDetails(attendanceArray array : [AttendanceModel], companiesList list : [String])
+    {
         //sending the received data from services to the viewmodel
         pAttendanceVMPro?.sendAttendanceDetails(attendanceArray : array, companiesList : list)
     }

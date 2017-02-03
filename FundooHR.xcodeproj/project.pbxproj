@@ -42,7 +42,7 @@
 		0AAD73AC1E24C90D0012DAA3 /* AttTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAD73AB1E24C90D0012DAA3 /* AttTabCell.swift */; };
 		0AB0D1271E0F90C3006AD8C3 /* ReportCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0D1261E0F90C3006AD8C3 /* ReportCollectionViewCell.swift */; };
 		0AB0D12B1E0FA4DD006AD8C3 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0D12A1E0FA4DD006AD8C3 /* ReportsViewController.swift */; };
-		0AB76BC81E274F47005CD159 /* paySlipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB76BC71E274F47005CD159 /* paySlipModel.swift */; };
+		0AB76BC81E274F47005CD159 /* PaySlipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB76BC71E274F47005CD159 /* PaySlipModel.swift */; };
 		0AB76BCA1E2751C8005CD159 /* SalaryPaySlipVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB76BC91E2751C8005CD159 /* SalaryPaySlipVM.swift */; };
 		0AB76BCC1E27526D005CD159 /* ReportsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB76BCB1E27526D005CD159 /* ReportsController.swift */; };
 		0AB76BCE1E275526005CD159 /* FetchReportsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB76BCD1E275526005CD159 /* FetchReportsDetails.swift */; };
@@ -127,7 +127,7 @@
 		0AAD73AB1E24C90D0012DAA3 /* AttTabCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttTabCell.swift; sourceTree = "<group>"; };
 		0AB0D1261E0F90C3006AD8C3 /* ReportCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportCollectionViewCell.swift; sourceTree = "<group>"; };
 		0AB0D12A1E0FA4DD006AD8C3 /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
-		0AB76BC71E274F47005CD159 /* paySlipModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paySlipModel.swift; sourceTree = "<group>"; };
+		0AB76BC71E274F47005CD159 /* PaySlipModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaySlipModel.swift; sourceTree = "<group>"; };
 		0AB76BC91E2751C8005CD159 /* SalaryPaySlipVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalaryPaySlipVM.swift; sourceTree = "<group>"; };
 		0AB76BCB1E27526D005CD159 /* ReportsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsController.swift; sourceTree = "<group>"; };
 		0AB76BCD1E275526005CD159 /* FetchReportsDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchReportsDetails.swift; sourceTree = "<group>"; };
@@ -293,7 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				0AC0923F1E09464F00C2BD3A /* EngineerDetails.swift */,
-				0AB76BC71E274F47005CD159 /* paySlipModel.swift */,
+				0AB76BC71E274F47005CD159 /* PaySlipModel.swift */,
 				0AE6FE601E3774D000B67776 /* AttendanceModel.swift */,
 			);
 			path = Models;
@@ -336,15 +336,15 @@
 				0AB0D1261E0F90C3006AD8C3 /* ReportCollectionViewCell.swift */,
 				0A73FCE21E0FEC7900C4B670 /* SalaryPayslipViewController.swift */,
 				0AA562861E1137FF0006F970 /* SalaryCollViewCell.swift */,
-				0A021B371E163F4700304AC3 /* InvoiceReportViewController.swift */,
-				0AAD3A401E1BD8040048563C /* InvoiceCollViewCell.swift */,
-				0A781B6F1E1BDC0C0047BE71 /* InvoiceTableViewCell.swift */,
 				0A6FCDD61E1A6BF300A1187E /* DownloadSPViewController.swift */,
-				0A6FCDD81E1A6C1200A1187E /* DownloadARViewController.swift */,
-				0A6FCDDA1E1A6C2A00A1187E /* DownloadIRViewController.swift */,
 				0AAD73A71E24C5C80012DAA3 /* AttendanceReportVC.swift */,
 				0AAD73A91E24C6AB0012DAA3 /* AttRepCollCell.swift */,
 				0AAD73AB1E24C90D0012DAA3 /* AttTabCell.swift */,
+				0A6FCDD81E1A6C1200A1187E /* DownloadARViewController.swift */,
+				0A021B371E163F4700304AC3 /* InvoiceReportViewController.swift */,
+				0AAD3A401E1BD8040048563C /* InvoiceCollViewCell.swift */,
+				0A781B6F1E1BDC0C0047BE71 /* InvoiceTableViewCell.swift */,
+				0A6FCDDA1E1A6C2A00A1187E /* DownloadIRViewController.swift */,
 				0A15620C1E3B892300159280 /* NextViewController.swift */,
 			);
 			path = View;
@@ -720,7 +720,7 @@
 				0AA562871E1137FF0006F970 /* SalaryCollViewCell.swift in Sources */,
 				0AC092441E095C0100C2BD3A /* EngineerDetailsController.swift in Sources */,
 				0AAD3A411E1BD8040048563C /* InvoiceCollViewCell.swift in Sources */,
-				0AB76BC81E274F47005CD159 /* paySlipModel.swift in Sources */,
+				0AB76BC81E274F47005CD159 /* PaySlipModel.swift in Sources */,
 				0A1600801E1F4CBF0014DC80 /* protocols.swift in Sources */,
 				0A4D1D3C1DFE8E6900CD1C29 /* SearchViewController.swift in Sources */,
 				0AB76BCA1E2751C8005CD159 /* SalaryPaySlipVM.swift in Sources */,
@@ -931,6 +931,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bridgelabz.FundooHR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FundooHR/FundooHR-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

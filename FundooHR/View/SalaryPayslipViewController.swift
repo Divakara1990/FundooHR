@@ -11,8 +11,8 @@
 
 import UIKit
 
-class SalaryPayslipViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
-   
+class SalaryPayslipViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate
+{
     //outlet for activity indicator
     @IBOutlet weak var loader: UIActivityIndicatorView!
     
@@ -36,13 +36,13 @@ class SalaryPayslipViewController: UIViewController, UICollectionViewDataSource,
    
     
     //variable to store the object of paySlipModel class type
-    var mFinalSalData : [paySlipModel]?
+    var mFinalSalData : [PaySlipModel]?
     
     //variable of salarypayslip viewmodel type
     var mSalPaySlipVMVar : SalaryPaySlipVM?
     
     //variable for a boolean
-    var mBool : Bool = false
+    var mCheck : Bool = false
     
     //variable to store the integer value
     var mButtonRow : Int?
@@ -56,7 +56,8 @@ class SalaryPayslipViewController: UIViewController, UICollectionViewDataSource,
     var mFlag : Bool = true
 
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         //creating the object of salaryslipViewModel and storing in the variable
@@ -87,15 +88,15 @@ class SalaryPayslipViewController: UIViewController, UICollectionViewDataSource,
     }
     
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
     //function executes when the data is fetched from the server successfully
-    func reloadFinalData(){
-        
+    func reloadFinalData()
+    {
         //assigning the sorted array to the variable of object type
         mFinalSalData = mSalPaySlipVMVar?.mSortArray
         //reloading the collection view
@@ -104,7 +105,8 @@ class SalaryPayslipViewController: UIViewController, UICollectionViewDataSource,
 
     
     //function, shud be executed when the selectall button is clicked
-    @IBAction func selectAllClicked(_ sender: Any) {
+    @IBAction func selectAllClicked(_ sender: Any)
+    {
         //checking if the butten is checked or unchecked
         if (selectAllCB.imageView?.image != mChecked){
             selectAllCB.setImage(mChecked!, for: .normal)
@@ -112,7 +114,9 @@ class SalaryPayslipViewController: UIViewController, UICollectionViewDataSource,
             salaryCollView.reloadData()
             mFlag = true
             
-        }else{
+        }
+        else
+        {
             selectAllCB.setImage(mUnchecked!, for: .normal)
             generateBtn.backgroundColor = UIColor.clear
             mFlag = false
@@ -123,10 +127,9 @@ class SalaryPayslipViewController: UIViewController, UICollectionViewDataSource,
     //function when the normal checkbox is clicked
     @IBAction func subCheckBoxClicked(_ sender: UIButton)
     {
-        
         mButtonRow = sender.tag
         mArr.append(mButtonRow!)
-        mBool = true
+        mCheck = true
         //converting the integer value to the indexpath
         let indexPath : IndexPath = IndexPath(item: mButtonRow!, section: 0);
         //reloading the particular cell based on the cell which is clicked by taking the indexpath
@@ -134,26 +137,35 @@ class SalaryPayslipViewController: UIViewController, UICollectionViewDataSource,
     }
     
     //uicollectionview datasource function to define the number of sections
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int
+    {
         return 1
     }
     
     //datasource function to declare the number of items in each section
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        self.loader.stopAnimating()
-        return (mSalPaySlipVMVar?.mSortArray.count)!
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
+        if (mSalPaySlipVMVar?.mSortArray.count)! == 0
+        {
+            return 0
+        }
+        else
+        {
+            self.loader.stopAnimating()
+            return (mSalPaySlipVMVar?.mSortArray.count)!
+        }
     }
     
     //datasource function to define what to be displayed in each cell of uicollectionview
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "salarycell", for: indexPath) as! SalaryCollViewCell
         //storing the object in the temp variable
         let temp = mFinalSalData?[indexPath.row]
         cell.contentView.backgroundColor = UIColor.white
-        cell.collLabel.text = temp?.engName
-        cell.company.text = temp?.engCompany
-        cell.status.text = temp?.engStatus
+        cell.collLabel.text = temp?.mEngName
+        cell.company.text = temp?.mEngCompany
+        cell.status.text = temp?.mEngStatus
         
         //sending the indexpath.row value to the function subcheckboxclicked using the tag
         cell.cellCB.tag = indexPath.row
@@ -161,26 +173,34 @@ class SalaryPayslipViewController: UIViewController, UICollectionViewDataSource,
                               for:.touchUpInside)
         
         //condition to check the selectall button
-        if mFlag {
+        if mFlag
+        {
             cell.cellCB.imageView?.image = mChecked
-        }else{
+        }
+        else
+        {
             cell.cellCB.imageView?.image = mUnchecked
         }
         
         //condition to check when the particular checkbox is clicked
-        if mBool{
-            for i in mArr{
-                if i == indexPath.row{
-                    if cell.cellCB.imageView?.image == mUnchecked{
+        if mCheck
+        {
+            for i in mArr
+            {
+                if i == indexPath.row
+                {
+                    if cell.cellCB.imageView?.image == mUnchecked
+                    {
                         cell.cellCB.imageView?.image = mChecked
-                    }else{
+                    }
+                    else
+                    {
                         cell.cellCB.imageView?.image = mUnchecked
                     }
                 }
             }
-            mBool = false
+            mCheck = false
         }
-
         return cell
     }
     
@@ -199,17 +219,19 @@ class SalaryPayslipViewController: UIViewController, UICollectionViewDataSource,
             cell.cellCB.setImage(mUnchecked, for: .normal)
         }
     }
-    
-
 }
+
+
 //extension of the UIcolor class which is used to set the color using hexadecimal value
-extension UIColor {
-    convenience init(colorWithHexValue value: Int, alpha:CGFloat = 1.0){
+extension UIColor
+{
+    convenience init(colorWithHexValue value: Int, alpha:CGFloat = 1.0)
+    {
         self.init(
-            red: CGFloat((value & 0xFF0000) >> 16) / 255.0,
-            green: CGFloat((value & 0x00FF00) >> 8) / 255.0,
-            blue: CGFloat(value & 0x0000FF) / 255.0,
-            alpha: alpha
-        )
+                    red: CGFloat((value & 0xFF0000) >> 16) / 255.0,
+                    green: CGFloat((value & 0x00FF00) >> 8) / 255.0,
+                    blue: CGFloat(value & 0x0000FF) / 255.0,
+                    alpha: alpha
+                 )
     }
 }

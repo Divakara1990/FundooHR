@@ -12,21 +12,21 @@
 import UIKit
 import Alamofire
 
-class LoginService: NSObject {
-    
+class LoginService: NSObject
+{
     //variable holds the protocol delegate
-    var pdelegate : LoginCotrollerProtocol?
+    var ploginControllerPro : LoginCotrollerProtocol?
     
     
     //constructor of the loginservice
-    init(loginControllerObj : LoginCotrollerProtocol) {
-        pdelegate = loginControllerObj
+    init(loginControllerObj : LoginCotrollerProtocol)
+    {
+        ploginControllerPro = loginControllerObj
     }
     
     //function make a rest api call by sending the username and password.
     func sendingLoginDetails(useremail:String, userpwd : String) -> Void
     {
-        
         //fetching the url from the plist which is already created in the project
         let path = Bundle.main.path(forResource: "RestUrls", ofType: "plist")
         let dict = NSDictionary(contentsOfFile: path!)
@@ -56,10 +56,10 @@ class LoginService: NSObject {
                     let check = json["token"] as Any
                    
                     
-                    if self.checkInternet(check : check as! String)
+                    if self.checkInternet(check : check)
                     {
-                        self.pdelegate?.errorMessageCtrl()
-                    }
+                        self.ploginControllerPro?.errorMessageCtrl()
+                    }//end of the inner if block
                     else
                     {
                         //fetching individual record from the received object
@@ -67,16 +67,17 @@ class LoginService: NSObject {
                         let status = json["status"] as! Int
                         let message = json["message"] as! String
                         //sending the received data to the controller using the protocol method
-                        self.pdelegate?.loginSuccessful(token: token, status : status, message: message)
-                    }
-                }
-        }
-    }
+                        self.ploginControllerPro?.loginSuccessful(token: token, status : status, message: message)
+                    }//end of the else block
+                }//end of the outer if block
+        }//end of the Alamofire request
+    }//end of the sendingLoginDetails() function
     
     
     //function to check the internet connection
-    func checkInternet(check : String) -> Bool{
-        if check == "Optional(null)"
+    func checkInternet(check : Any) -> Bool
+    {
+        if (check as! String) == "Optional(null)"
         {
             return true
         }

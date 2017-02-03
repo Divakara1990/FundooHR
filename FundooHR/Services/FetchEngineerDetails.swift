@@ -22,7 +22,7 @@ class FetchEngineerDetails: NSObject
     var mFinalEngData:[EngineerDetails] = []
     
     //variable to holds the delegate protocol
-    var pEmpControllerProtocol : EmployeeControllerProtocol?
+    var pEmpControllerPro : EmployeeControllerProtocol?
     
     //variable to store the timestamp
     var mTimeStamp : Int?
@@ -33,7 +33,7 @@ class FetchEngineerDetails: NSObject
     //constructor of the class
     init(employeeControllerObj : EmployeeControllerProtocol)
     {
-        pEmpControllerProtocol = employeeControllerObj
+        pEmpControllerPro = employeeControllerObj
     }
     
     // method to Fetch the Engineer Details
@@ -94,11 +94,11 @@ class FetchEngineerDetails: NSObject
                 print("The Engineer Data is: " + json.description)
                 
                 //receiving in the form of the NSDictionary
-                let EngineerDetailsArray = json as NSDictionary
-                print(EngineerDetailsArray.description)
+                let engineerDetailsArray = json as NSDictionary
+                print(engineerDetailsArray.description)
                 
                 //pasing the key "employeeList" fetching the value which is in the form of array
-                let array1 = EngineerDetailsArray["employeeList"] as! NSArray
+                let array1 = engineerDetailsArray["employeeList"] as! NSArray
                 
                 //iterating that array to fetch the details of employee
                 for variab in array1
@@ -114,14 +114,14 @@ class FetchEngineerDetails: NSObject
                     let empID = v1["engineerId"] as! String
                     
                     //setting that all details in the form of object
-                    let EngDetails = EngineerDetails(EngineerName: empName, EngineerJob: empstatus, EngineerCompany: empCmpny, EngineerMobile: empMob, EngineerEmail: empMail, EngineerID: empID)
+                    let engDetails = EngineerDetails(EngineerName: empName, EngineerStatus: empstatus, EngineerCompany: empCmpny, EngineerMobile: empMob, EngineerEmail: empMail, EngineerID: empID)
                     
                     //appending that object to the class type
-                    self.mFinalEngData.append(EngDetails)
+                    self.mFinalEngData.append(engDetails)
                 }
                 
                 //sending the received object to the Controller
-                self.pEmpControllerProtocol?.sendEmployeeDetails(engDetailArray: self.mFinalEngData)
+                self.pEmpControllerPro?.sendEmployeeDetails(engDetailArray: self.mFinalEngData)
             } catch  {
                 print("error trying to convert data to JSON")
                 return

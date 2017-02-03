@@ -11,8 +11,8 @@
 
 import UIKit
 
-class AttTabCell: UITableViewCell {
-
+class AttTabCell: UITableViewCell
+{
     //outlet to hold the leave count
     @IBOutlet weak var leaveCount: UILabel!
     
@@ -25,15 +25,15 @@ class AttTabCell: UITableViewCell {
     //outlet to display the data inside the label
     @IBOutlet weak var labInTabCel: UILabel!
     
-       override func awakeFromNib() {
+    
+    override func awakeFromNib()
+    {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool)
+    {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-
 }

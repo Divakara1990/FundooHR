@@ -13,33 +13,33 @@ import UIKit
 class EngineerDetails: NSObject
 {
     //variable which stores the employee name
-    var engName : String?
+    var mEngName : String?
     
     //variable which stores the employee job type
-    var engJob : String?
+    var mEngStatus : String?
     
     //variable which stores the employee company
-    var engCompany : String?
+    var mEngCompany : String?
     
     //variable which stores the employee mobile number
-    var engMobile : String?
+    var mEngMobile : String?
     
     //variable which stores the employee emailid
-    var engEmail : String?
+    var mEngEmail : String?
     
     //variable which stores the employee unique ID
-    var engID : String?
+    var mEngID : String?
     
     
     //constructor which initializes the all details of the employee
-    init(EngineerName Name : String, EngineerJob Job : String, EngineerCompany Company : String, EngineerMobile Mobile : String, EngineerEmail  Email : String, EngineerID EID : String)
+    init(EngineerName name : String, EngineerStatus status : String, EngineerCompany company : String, EngineerMobile mobile : String, EngineerEmail  email : String, EngineerID eid : String)
     {
        
-        self.engName = Name
-        self.engJob = Job
-        self.engCompany = Company
-        self.engMobile = Mobile
-        self.engEmail = Email
-        self.engID = EID
+        self.mEngName = name
+        self.mEngStatus = status
+        self.mEngCompany = company
+        self.mEngMobile = mobile
+        self.mEngEmail = email
+        self.mEngID = eid
     }
 }

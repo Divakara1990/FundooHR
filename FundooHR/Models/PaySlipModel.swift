@@ -10,25 +10,23 @@
 
 import UIKit
 
-class paySlipModel: NSObject {
-
+class PaySlipModel: NSObject
+{
     //variable which holds the employee name
-    var engName : String?
+    var mEngName : String?
     
     //variable which holds the employee status(job type)
-    var engStatus : String?
+    var mEngStatus : String?
     
     //variable which holds the employee company
-    var engCompany : String?
+    var mEngCompany : String?
     
     
     //constructor which initializes all the variable values
-    init(EngineerName Name : String, EngineerJob Job : String, EngineerCompany Company : String)
+    init(EngineerName name : String, EngineerStatus status : String, EngineerCompany company : String)
     {
-        
-        self.engName = Name
-        self.engStatus = Job
-        self.engCompany = Company
+        self.mEngName = name
+        self.mEngStatus = status
+        self.mEngCompany = company
     }
-
 }

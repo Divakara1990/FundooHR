@@ -10,8 +10,8 @@
 
 import UIKit
 
-class SearchCollViewCell: UICollectionViewCell {
-    
+class SearchCollViewCell: UICollectionViewCell
+{
     //outlet for the image inside the collectionviewcell
     @IBOutlet weak var EngineerImage: UIImageView!
     
@@ -30,4 +30,4 @@ class SearchCollViewCell: UICollectionViewCell {
     //outlet for company
     @IBOutlet weak var EngineerCompany: UILabel!
     
-}
+}//end of the class

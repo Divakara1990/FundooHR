@@ -11,20 +11,21 @@
 
 import UIKit
 
-class SlideMenuTableViewCell: UITableViewCell {
-    
+class SlideMenuTableViewCell: UITableViewCell
+{
     //label to display the content
     @IBOutlet weak var label: UILabel!
     
-    override func awakeFromNib() {
+    override func awakeFromNib()
+    {
         super.awakeFromNib()
         // Initialization code
-    }
+    }//end of the awakeFromNib() function
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
+    override func setSelected(_ selected: Bool, animated: Bool)
+    {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-
-}
+    }//end of the setSelected() function
+}//end of the class

@@ -12,19 +12,19 @@
 import UIKit
 import CoreData
 
-class FetchAttendanceReport: NSObject{
-    
+class FetchAttendanceReport: NSObject
+{
     //variable to hold the protocol type
     var pAttendanceCtrlPro : AttendanceSlipControllerProtocol?
     
     //variable to hold the token which is used to send with the urlrequest
-    var mtoken : String?
+    var mToken : String?
     
     //variable to hold the timestamp
-    var mtimeStamp : Int?
+    var mTimeStamp : Int?
     
     //variable which holds the array of the object type (attendance model object)
-    var mfinalAttData : [AttendanceModel] = []
+    var mFinalAttData : [AttendanceModel] = []
     
     //variable of utility object
     var mUtil = Utility()
@@ -42,14 +42,14 @@ class FetchAttendanceReport: NSObject{
     func fetchAttendanceReportDetails(){
         
         //variable which is used to hold the array of string type
-        var mcmpnyArr : [String] = []
+        var mCmpnyArr : [String] = []
         
         // invoking the method to fetch the token and storing in the variable to send with the url
-        let mtok = mUtil.fetchToken()
+        let mTok = mUtil.fetchToken()
         
         //generating the time stamp
-        mtimeStamp = Int(Date().timeIntervalSince1970 * 1000)
-        print(mtimeStamp!)
+        mTimeStamp = Int(Date().timeIntervalSince1970 * 1000)
+        print(mTimeStamp!)
         
         //fetching the url which is stored in the plist using key and value pair
         let path = Bundle.main.path(forResource: "RestUrls", ofType: "plist")
@@ -67,7 +67,7 @@ class FetchAttendanceReport: NSObject{
         var murlRequest = URLRequest(url: murl)
         
         //adding the fetched token to the url
-        murlRequest.addValue(mtok, forHTTPHeaderField: "x-token")
+        murlRequest.addValue(mTok, forHTTPHeaderField: "x-token")
         
         // set up the session
         let mconfig = URLSessionConfiguration.default
@@ -108,34 +108,34 @@ class FetchAttendanceReport: NSObject{
                     //iterating that array to fetch the value present the array
                     for i in marray1
                     {
-                        var mleave : Int?
-                        var mename : String?
-                        let mdic = i as! NSDictionary
-                        let mcmpny = mdic["company"] as! String
-                        print(mcmpny)
-                        mcmpnyArr.append(mcmpny)
-                        print(mcmpnyArr)
-                        let marr = mdic["employeeList"] as! NSArray
+                        var eLeave : Int?
+                        var eName : String?
+                        let dic = i as! NSDictionary
+                        let eCmpny = dic["company"] as! String
+                        print(eCmpny)
+                        mCmpnyArr.append(eCmpny)
+                        print(mCmpnyArr)
+                        let arr = dic["employeeList"] as! NSArray
                     
-                        for x in marr
+                        for x in arr
                         {
-                            let mdata = x as! NSDictionary
-                            mleave = mdata["employeeLeave"] as? Int
-                            let mstr = String(describing: mleave!)
+                            let data = x as! NSDictionary
+                            eLeave = data["employeeLeave"] as? Int
+                            let str = String(describing: eLeave!)
                         
-                            mename = mdata["employeeName"] as? String
+                            eName = data["employeeName"] as? String
                             
                             //adding into the model object
-                            let mattendanceDetails = AttendanceModel(EngineerName: mename!, EngineerLeave: mstr)
+                            let mattendanceDetails = AttendanceModel(EngineerName: eName!, EngineerLeave: str)
                             //adding that object to the array of object type
-                            self.mfinalAttData.append(mattendanceDetails)
+                            self.mFinalAttData.append(mattendanceDetails)
                     }
                     
-                    print(self.mfinalAttData)
+                    print(self.mFinalAttData)
                 }
                 
                 //sending the received object to the Controller
-                self.pAttendanceCtrlPro?.sendReceivedAttendanceReportDetails(attendanceArray: self.mfinalAttData, companiesList: mcmpnyArr)
+                self.pAttendanceCtrlPro?.sendReceivedAttendanceReportDetails(attendanceArray: self.mFinalAttData, companiesList: mCmpnyArr)
             } catch  {
                 print("error trying to convert data to JSON")
                 return

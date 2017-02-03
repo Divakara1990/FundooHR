@@ -11,8 +11,8 @@
 
 import UIKit
 
-class AttRepCollCell: UICollectionViewCell {
-    
+class AttRepCollCell: UICollectionViewCell
+{
     //outlet for the label holds the value of string type
     @IBOutlet weak var lab: UILabel!
     
@@ -21,5 +21,4 @@ class AttRepCollCell: UICollectionViewCell {
     
     //outlet for the button used inside the collectionviewcell
     @IBOutlet weak var collCellCheckBox: UIButton!
-       
 }

@@ -11,8 +11,8 @@
 
 import UIKit
 
-class LoginViewModel: NSObject, LoginVMProtocol {
-    
+class LoginViewModel: NSObject, LoginVMProtocol
+{
     //variable to store the email
     var mEmail = String()
     
@@ -33,6 +33,7 @@ class LoginViewModel: NSObject, LoginVMProtocol {
     
     //variable to store the login message
     var mLoginmsg : String?
+    
     
     //constructor of the loginviewmodel with two parameters, inside creates the object of the LoginController by passing the loginviewmodel object to the LoginController
     init(loginVCObj : LoginVCProtocol, emailId : String, password : String)
@@ -70,8 +71,8 @@ class LoginViewModel: NSObject, LoginVMProtocol {
     }
     
     //function if any error occurs
-    func errorMessageVM() -> Void{
+    func errorMessageVM() -> Void
+    {
         mLoginVCPro?.errorMessage()
     }
-    
 }

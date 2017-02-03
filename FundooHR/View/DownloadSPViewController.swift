@@ -10,30 +10,26 @@
 
 import UIKit
 
-class DownloadSPViewController: UIViewController {
-
+class DownloadSPViewController: UIViewController
+{
     //outlet to display the todays date
     @IBOutlet weak var todaysDate: UILabel!
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
-    todaysDate.text = CurrentDate
-
-        // Do any additional setup after loading the view.
+        todaysDate.text = CurrentDate
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func backButtomClicked(_ sender: Any) {
-        
-//        self.performSegue(withIdentifier: "gobacktosalaryslip", sender: nil)
-        self.navigationController?.popViewController(animated: true)
-        
+    @IBAction func backButtomClicked(_ sender: Any)
+    {
+       _ = self.navigationController?.popViewController(animated: true)
     }
-    
-        
 }

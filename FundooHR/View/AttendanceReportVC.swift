@@ -11,8 +11,8 @@
 
 import UIKit
 
-class AttendanceReportVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource, AttendanceVCProtocol {
-    
+class AttendanceReportVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource, AttendanceVCProtocol
+{
     //outlet for activity indicator
     @IBOutlet weak var loader: UIActivityIndicatorView!
     
@@ -57,14 +57,13 @@ class AttendanceReportVC: UIViewController,UICollectionViewDelegate,UICollection
     //variable of int type and assigning it to zero
     var mRow1 : Int = 0
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         self.loader.startAnimating()
         
         //creating the object of AttendanceslipViewModel and storing in the variable
         mAttendanceSlipVMobj = AttendanceReportViewModel(attendanceVCObj: self)
-        
-       // mAttendanceSlipVMVar?.mAttendanceVCVar = self
         
         //invoking the method which is present in the viewmodel
         mAttendanceSlipVMobj?.fetchAttendanceRecord()
@@ -81,31 +80,35 @@ class AttendanceReportVC: UIViewController,UICollectionViewDelegate,UICollection
     }
     
     //after getting the data from the rest api, function to reload the data of the view
-    func reloadAttendanceData(){
-        
+    func reloadAttendanceData()
+    {
         self.collectionView.reloadData()
         mFinalAttData = mAttendanceSlipVMobj?.mSortArray
-        
     }
     
     
     //function used to perform the checkbox selectall operation
-    @IBAction func selectAllCheckBoxClicked(_ sender: Any) {
-        if (selectAllBtn.imageView?.image != mChecked){
+    @IBAction func selectAllCheckBoxClicked(_ sender: Any)
+    {
+        if (selectAllBtn.imageView?.image != mChecked)
+        {
             selectAllBtn.setImage(mChecked!, for: .normal)
             mFlag = true
             generateBtn.backgroundColor = UIColor(colorWithHexValue: 0x6FB8D9)
             collectionView.reloadData()
-            
-            
-        }else{
+        }
+        else
+        {
             selectAllBtn.setImage(mUnchecked!, for: .normal)
             generateBtn.backgroundColor = UIColor.clear
             mFlag = false
             collectionView.reloadData()
         }
     }
-    override func didReceiveMemoryWarning() {
+    
+    
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -113,25 +116,37 @@ class AttendanceReportVC: UIViewController,UICollectionViewDelegate,UICollection
 //uicollectionview datasource and delegates methods
     @available(iOS 6.0, *)
     //function to set the number of items for the collectionview
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-       self.loader.stopAnimating()
-        return (mAttendanceSlipVMobj?.mCompaniesArray.count)!
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
+        if (mAttendanceSlipVMobj?.mCompaniesArray.count)! == 0
+        {
+            return 0
+        }
+        else
+        {
+            self.loader.stopAnimating()
+            return (mAttendanceSlipVMobj?.mCompaniesArray.count)!
+        }
     }
     
    
     //datasource method used to display the contents of the collectionview cell
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! AttRepCollCell
         
         cell.lab.text = mAttendanceSlipVMobj?.mCompaniesArray[indexPath.row]
         mRow1 = indexPath.row
         cell.tableView.reloadData()
         
-        if mFlag {
+        if mFlag
+        {
             cell.collCellCheckBox.imageView?.image = mChecked
             cell.tableView.reloadData()
             return cell
-        }else{
+        }
+        else
+        {
             cell.collCellCheckBox.imageView?.image = mUnchecked
             cell.tableView.reloadData()
             return cell
@@ -140,12 +155,15 @@ class AttendanceReportVC: UIViewController,UICollectionViewDelegate,UICollection
     
     
     //datasource method of the uitableviewcell, to set the number of the rows in section
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         return mFinalAttData!.count
     }
     
+    
     //datasource method used to display the contents of the table cell
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! AttTabCell
         
         cell.labInTabCel.text = mFinalAttData?[indexPath.row].mName
@@ -168,10 +186,12 @@ class AttendanceReportVC: UIViewController,UICollectionViewDelegate,UICollection
         }
         
         
-        if mFlag {
+        if mFlag
+        {
             cell.tabCheckBox.imageView?.image = mChecked
         }
-        else{
+        else
+        {
             cell.tabCheckBox.imageView?.image = mUnchecked
         }
         return cell

@@ -13,16 +13,16 @@ import UIKit
 
 class FetchReportsDetails: NSObject {
 
-    var finalSalaryArray : [paySlipModel] = []
+    var mFinalSalaryArray : [PaySlipModel] = []
     
     //variable to store the protocol delegate
-    var pdelegate1A : SalaryPaySlipControllerProtocol?
+    var pSalaryControllerPro : SalaryPaySlipControllerProtocol?
     
     //variable to store the array type
-    var marray1 : NSArray?
+    var mArray1 : NSArray?
     
     //variable stores the object type
-    var mpaySlipData : [paySlipModel] = []
+    var mPaySlipData : [PaySlipModel] = []
    
     
     
@@ -97,14 +97,14 @@ class FetchReportsDetails: NSObject {
                     let empCmpny = v1["company"] as! String
                     
                     //setting that all details in the form of object
-                    let salDetails = paySlipModel(EngineerName: empName, EngineerJob: empstatus, EngineerCompany: empCmpny)
+                    let salDetails = PaySlipModel(EngineerName: empName, EngineerStatus: empstatus, EngineerCompany: empCmpny)
                     
                     //appending that object to the class type
-                    self.finalSalaryArray.append(salDetails)
+                    self.mFinalSalaryArray.append(salDetails)
                 }
                 
                 //sending the received object to the Controller
-                self.pdelegate1A?.receiveFetchedSalaryDetails(paySlipArray: self.finalSalaryArray)
+                self.pSalaryControllerPro?.receiveFetchedSalaryDetails(paySlipArray: self.mFinalSalaryArray)
             } catch  {
                 print("error trying to convert data to JSON")
                 return

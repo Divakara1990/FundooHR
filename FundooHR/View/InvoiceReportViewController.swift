@@ -40,7 +40,8 @@ class InvoiceReportViewController: UIViewController
     var mFlag : Bool = false
    
    
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
        
         //setting the properties to the generate button
@@ -56,7 +57,8 @@ class InvoiceReportViewController: UIViewController
                // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -92,20 +94,25 @@ extension InvoiceReportViewController : UICollectionViewDataSource, UICollection
 {
     @available(iOS 6.0, *)
     //function to set the number of items in the section of the collectionview
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
         return mCompanies.count
     }
     
     //function to display the contents to be displayed inside the each cell of collectionview
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "invoice cell", for: indexPath) as! InvoiceCollViewCell
         
         cell.invoiceCollLabel.text = mCompanies[indexPath.row]
-        if mFlag {
+        if mFlag
+        {
             cell.collCheckBox.imageView?.image = mChecked
             cell.tableView.reloadData()
             return cell
-        }else{
+        }
+        else
+        {
             cell.collCheckBox.imageView?.image = mUnchecked
             cell.tableView.reloadData()
             return cell
@@ -114,19 +121,23 @@ extension InvoiceReportViewController : UICollectionViewDataSource, UICollection
     
     
     //function to display the number of rows to be difined in the tableview
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         return mNames.count
     }
     
     //function to display the contents of the tableviewcell.
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! InvoiceTableViewCell
         cell.tabLabel?.text = mNames[indexPath.row]
         
-        if mFlag {
+        if mFlag
+        {
             cell.tabCellCheckBox.imageView?.image = mChecked
         }
-        else{
+        else
+        {
             cell.tabCellCheckBox.imageView?.image = mUnchecked
         }
         cell.textLabel?.textColor = UIColor.darkGray

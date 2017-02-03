@@ -13,8 +13,8 @@
 import UIKit
 
 
-class ViewController: UIViewController, LoginVCProtocol{
-
+class ViewController: UIViewController, LoginVCProtocol
+{
     //outlet for company image
     @IBOutlet weak var logoImage: UIImageView!
     
@@ -42,7 +42,7 @@ class ViewController: UIViewController, LoginVCProtocol{
     var mLoginVM : LoginViewModel?
     
     //variable to store the login token
-    var mloginToken : String?
+    var mLoginToken : String?
     
     //variable to store the email
     var mEmail : String?
@@ -94,35 +94,39 @@ class ViewController: UIViewController, LoginVCProtocol{
         //invoking the function to underline the textfield
         emailField.underlined()
         passwordField.underlined()
-    }
+    }//end of the viewDidLoad() method
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
+    }//end of the didReceiveMemoryWarning() function
     
     //Function to Underline when the Simulator is rotated
-    func rotated() {
-        if UIDeviceOrientationIsLandscape(UIDevice.current.orientation) {
+    func rotated()
+    {
+        if UIDeviceOrientationIsLandscape(UIDevice.current.orientation)
+        {
             print("Landscape")
             emailField.underlined()
             passwordField.underlined()
-        }
+        }//end of if block
         
-        if UIDeviceOrientationIsPortrait(UIDevice.current.orientation) {
+        if UIDeviceOrientationIsPortrait(UIDevice.current.orientation)
+        {
             print("Portrait")
             emailField.underlined()
             passwordField.underlined()
-        }
+        }//end of if block
         
-    }
+    }//end of the rotated() method
     
     //validating the user from the response which v got from the RestApi
     func saveReceivedToken(tokn1 : String , status :Int, mess : String ) -> Void
     {
         if status == 200
         {
-            mloginToken = tokn1
+            mLoginToken = tokn1
            // self.saveInCoreData(saveToken: tokn1, emailID1 : mEmail!)
             
             //saving the token in NSUserDefaults
@@ -132,22 +136,23 @@ class ViewController: UIViewController, LoginVCProtocol{
             self.activityLoader.isHidden = true
             //if the condition is true then performing the segue to the dashboard
             self.performSegue(withIdentifier: "gotoDashboard", sender: nil)
-        }
-    }
+        }//end of if block
+    }//end of saveReceivedToken() method
     
     
     //function which saves the token and the emailid in the userdefaults
-    func saveINUserDefaults(saveToken :String , emailID :String) -> Void{
+    func saveINUserDefaults(saveToken :String , emailID :String) -> Void
+    {
         let preferences = UserDefaults.standard
         preferences.setValuesForKeys(["tokenData": saveToken])
         preferences.setValuesForKeys(["emailID": emailID])
         preferences.synchronize()
-    }
+    }//end of the saveINUserDefaults() function
     
     
     //function to execute when any error occurred while loging in
-    func errorMessage() -> Void{
-        
+    func errorMessage() -> Void
+    {
         self.loadingLabel.isHidden = true
         self.activityLoader.stopAnimating()
         self.activityLoader.isHidden = true
@@ -160,7 +165,7 @@ class ViewController: UIViewController, LoginVCProtocol{
         alertView.addAction(action)
         //presenting the alertbox
         self.present(alertView, animated: true, completion :nil)
-    }
+    }//end of the errorMessage() function
     
     
     @IBAction func LoginButtonPressed(_ sender: Any)
@@ -172,25 +177,32 @@ class ViewController: UIViewController, LoginVCProtocol{
         mPassword = passwordField.text
         
         //Checking the User as entered the Username & password
-        if emailField.text! == "" || passwordField.text! == ""{
+        if emailField.text! == "" || passwordField.text! == ""
+        {
             //checking the emailfield
-            if emailField.text! == ""{
+            if emailField.text! == ""
+            {
                 mCheck = "please Enter the emailID"
                 emailField.text = ""
-            }
+            }//end of if block
+            
             //checking the password field
-            if passwordField.text == ""{
+            if passwordField.text == ""
+            {
                 //if both email and password field is empty, asking the user to enter the both emailid and password
-                if mCheck != nil{
+                if mCheck != nil
+                {
                     mCheck! += " & password"
-                }
-                else{
+                }//end of if block
+                else
+                {
                     mCheck = "Please Enter the Password"
-                }
+                }//end of else block
+                
                 //invoke the utility method to display the alertbox message
                 mUtilVar.displayErrorMessage(message: mCheck!, view: self)
-            }
-        }
+            }//end of inner if block
+        }//end of outer if block
         else
         {
                 //if both fields are entered then validating the credentials using the utility method
@@ -205,7 +217,7 @@ class ViewController: UIViewController, LoginVCProtocol{
                     //invoking the viewmodel method
                     mLoginVM?.sendLoginCredentials()
                     
-                }
+                }//end of inner if block
                 else
                 {
                     //if the entered credentials is not valid then invoke the utility method to display the error message
@@ -213,7 +225,7 @@ class ViewController: UIViewController, LoginVCProtocol{
                     //making both fields empty
                     emailField.text = ""
                     passwordField.text = ""
-                }
-            }
-        }
-}
+                }//end of inner else block
+            }//end of the outer else block
+        }//end of the action LoginButtonPressed()
+}//end of the class

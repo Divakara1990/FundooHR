@@ -11,8 +11,8 @@
 
 import UIKit
 
-class ReportsViewController: UIViewController {
-    
+class ReportsViewController: UIViewController
+{
     //outlet for menu button to use the slide menu viewcontroller
     @IBOutlet weak var slideMenu1: UIButton!
     
@@ -32,7 +32,8 @@ class ReportsViewController: UIViewController {
     //variable of string type array contains report headings
     var mReportData = ["Salary Payslip","Attendance Report","Invoice"]
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
     
         //brings the slide menu from left side of the view, using swreveal viewcontroller
@@ -52,15 +53,15 @@ class ReportsViewController: UIViewController {
         
         //displaying the date in the required formate
         date.text = CurrentDate
-        
-    }
+    }//end of the viewDidLoad() method
 
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-}
+    }//end of the didReceiveMemoryWarning() method
+}//end of the class
 
 
 
@@ -68,19 +69,22 @@ class ReportsViewController: UIViewController {
 extension ReportsViewController : UICollectionViewDataSource, UICollectionViewDelegate
 {
     //functions to define the number of sections in collectionview
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int
+    {
         return 1
-    }
+    }//end of the collectionviews numberOfSections() function
     
     
     //function to define the number of items in each section of collectionview
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
         return mReportData.count
-    }
+    }//end of the collectionviews numberOfItemsInSection() function
     
     
     //function to define the contents to be displayed in each cell of collectionview
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "reportcell", for: indexPath) as! ReportCollectionViewCell
         
         cell.reportCellHeading?.text = mReportData[indexPath.row]
@@ -94,21 +98,23 @@ extension ReportsViewController : UICollectionViewDataSource, UICollectionViewDe
         cell.layer.shadowRadius = 2.0
         cell.layer.masksToBounds = false
         return cell
-    }
+    }//end of the collectionviews cellForItemAt() function
     
     
     //function of delegate method to perform segue when the particular cell is clicked
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    
-        if indexPath.row == 0 {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        if indexPath.row == 0
+        {
            self.performSegue(withIdentifier: "gotoSalaryPayslip", sender: nil)
-        }
-        else if indexPath.row == 1 {
+        }//end of if block
+        else if indexPath.row == 1
+        {
             self.performSegue(withIdentifier: "gotoAttendanceReport", sender: nil)
-        }
-        else{
+        }//end of the else if block
+        else
+        {
             self.performSegue(withIdentifier: "gotoInvoiceReport", sender: nil)
-        }
-        
-    }
-}
+        }//end of the else block
+    }//end of the collectionviews didSelectItemAt() function
+}//end of the extension class

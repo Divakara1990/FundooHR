@@ -14,17 +14,17 @@ import UIKit
 class LoginController: NSObject,LoginCotrollerProtocol
 {
     //variable of service class
-    var mloginSer : LoginService?
+    var mLoginSer : LoginService?
     
     //variable for the VMProtocol
-    var pdel : LoginVMProtocol?
+    var pLoginVMPro : LoginVMProtocol?
     
     //constructor of logincontroller which creates the object of the LoginService inside this. also sends the logincontroller object to the loginservice class
     init(loginVMProtocolObj : LoginVMProtocol) {
         super.init()
-        pdel = loginVMProtocolObj
+        pLoginVMPro = loginVMProtocolObj
         //creating the object of the service class
-        mloginSer = LoginService(loginControllerObj : self)
+        mLoginSer = LoginService(loginControllerObj : self)
     }
     
     
@@ -32,19 +32,19 @@ class LoginController: NSObject,LoginCotrollerProtocol
     func sendCredentials(email: String, password : String) -> Void
     {
         //invoking the method which is in services
-        mloginSer?.sendingLoginDetails(useremail: email, userpwd: password)
+        mLoginSer?.sendingLoginDetails(useremail: email, userpwd: password)
     }
     
     
     //receiving the data from the services
     func loginSuccessful(token: String, status: Int, message: String)
     {
-        pdel?.checkReceivedLoginStatus(token1: token, status1: status, message1:message)
+        pLoginVMPro?.checkReceivedLoginStatus(token1: token, status1: status, message1:message)
     }
     
     
     //method if any error is occurred
     func errorMessageCtrl() -> Void {
-        pdel?.errorMessageVM()
+        pLoginVMPro?.errorMessageVM()
     }
 }

@@ -11,8 +11,8 @@
 
 import UIKit
 
-class SalaryCollViewCell: UICollectionViewCell {
-   
+class SalaryCollViewCell: UICollectionViewCell
+{   
     //outlet to checkbox button which is inside the cell
     @IBOutlet weak var cellCB: UIButton!
     

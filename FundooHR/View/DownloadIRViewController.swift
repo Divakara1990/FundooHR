@@ -8,8 +8,8 @@
 
 import UIKit
 
-class DownloadIRViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-
+class DownloadIRViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
+{
     //outlet fo rthe tableview
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,7 +20,8 @@ class DownloadIRViewController: UIViewController,UITableViewDataSource,UITableVi
     var mArray = ["meru.zip","craftsville.zip","bridgelabz.zip","greytip.zip","nexteducation.zip"]
     
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         //setting datasource and delegates of the tableview
@@ -28,20 +29,24 @@ class DownloadIRViewController: UIViewController,UITableViewDataSource,UITableVi
         tableView.delegate = self
         
         todaysDate1.text = CurrentDate
-
     }
 
    
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
 
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
         return mArray.count
     }
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+    
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
         let cell:UITableViewCell = self.tableView!.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
         cell.textLabel?.text = self.mArray[indexPath.row]
         cell.textLabel?.textColor = UIColor.darkGray;
@@ -53,10 +58,8 @@ class DownloadIRViewController: UIViewController,UITableViewDataSource,UITableVi
         return cell
     }
     
-    @IBAction func backButtonClicked(_ sender: Any) {
-        
-        self.navigationController?.popViewController(animated: true)
-        
+    @IBAction func backButtonClicked(_ sender: Any)
+    {
+       _ = self.navigationController?.popViewController(animated: true)
     }
-    
 }

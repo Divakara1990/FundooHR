@@ -25,7 +25,6 @@ protocol LoginCotrollerProtocol
     func errorMessageCtrl()
 }
 
-
 protocol LoginVCProtocol
 {
     func saveReceivedToken(tokn1 : String , status :Int, mess : String )
@@ -46,27 +45,27 @@ protocol EmployeeVMProtocol
     func sendEngineerDetails(edArray:[EngineerDetails])
 }
 
-protocol EmployeeVCProtocol {
-    
+protocol EmployeeVCProtocol
+{
     func reloadFinalData()
 }
 
 
 
-
 // protocols for attendancereports flow
-protocol AttendanceSlipControllerProtocol {
-    
+protocol AttendanceSlipControllerProtocol
+{
     func fetchAttendanceDetails()
     func sendReceivedAttendanceReportDetails(attendanceArray array : [AttendanceModel], companiesList list : [String])
 }
 
-protocol AttendanceVMProtocol {
-    
+protocol AttendanceVMProtocol
+{
     func sendAttendanceDetails(attendanceArray array : [AttendanceModel], companiesList list : [String])
 }
 
-protocol AttendanceVCProtocol {
+protocol AttendanceVCProtocol
+{
     func reloadAttendanceData()
 }
 
@@ -75,11 +74,11 @@ protocol AttendanceVCProtocol {
 protocol SalaryPaySlipControllerProtocol
 {
     func fetchSalaryDetails()
-    func receiveFetchedSalaryDetails(paySlipArray array : [paySlipModel])
+    func receiveFetchedSalaryDetails(paySlipArray array : [PaySlipModel])
 }
 
 protocol SalaryPaySlipVMProtocol
 {
-    func receieveSalaryData(salSlipArray array: [paySlipModel])
+    func receieveSalaryData(salSlipArray array: [PaySlipModel])
 }
 

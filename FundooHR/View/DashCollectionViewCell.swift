@@ -11,8 +11,8 @@
 
 import UIKit
 
-class DashCollectionViewCell: UICollectionViewCell {
-   
+class DashCollectionViewCell: UICollectionViewCell
+{
     //outlet for the dashboard content
     @IBOutlet weak var dashBoardHeading: UILabel!
     
@@ -21,4 +21,4 @@ class DashCollectionViewCell: UICollectionViewCell {
     
     //outlet for the menu logo
     @IBOutlet weak var dashBoardLogo: UIImageView!
-}
+}//end of the class

@@ -15,8 +15,8 @@ import UIKit
 //global variable which can be used in all views without creating the object
 var CurrentDate : String?
 
-class DashboardViewController: UIViewController {
-
+class DashboardViewController: UIViewController
+{
     //outlet fr menu button(which gives the view from left side)
     @IBOutlet weak var slideBarButton: UIButton!
     
@@ -40,7 +40,8 @@ class DashboardViewController: UIViewController {
     //variable to store the date formatter object
     let mFormatter = DateFormatter()
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         //gives the seperate view, SlideBar.
@@ -61,11 +62,10 @@ class DashboardViewController: UIViewController {
         mFormatter.setLocalizedDateFormatFromTemplate("dd-MMMM-yyyy")
         CurrentDate = mFormatter.string(from: Date())
         todaysDate.text = CurrentDate
-        
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
@@ -76,21 +76,23 @@ class DashboardViewController: UIViewController {
 //collectionview datasource and delegate methods
 extension DashboardViewController : UICollectionViewDataSource, UICollectionViewDelegate
 {
-    
     //method to declare the number of sections
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int
+    {
         return 1
-    }
+    }//end of if block
     
     
     //method to define the number of items in section
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    {
         return mDashBoardData.count
-    }
+    }//end of collectionview numberOfItemsInSection method
     
     
     //method to display the contents of the collectionview
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
         //defining the cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashBoard Cells", for: indexPath) as! DashCollectionViewCell
         
@@ -107,18 +109,20 @@ extension DashboardViewController : UICollectionViewDataSource, UICollectionView
         cell.layer.shadowRadius = 2.0
         cell.layer.masksToBounds = false
         return cell
-    }
+    }//end of cellForItemAt indexpath() method
     
     
     //performing the segue operations when clicked on the particular cell
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        if indexPath.row == 3 {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+        if indexPath.row == 3
+        {
                 self.performSegue(withIdentifier: "gotoEngineers", sender: nil)
-        }
-        else if indexPath.row == 5 {
+        }//end of the if block
+        else if indexPath.row == 5
+        {
             self.performSegue(withIdentifier: "gotoReports", sender: nil)
-        }
-    }
+        }//end of the else block
+    }//end of the collectionview didselectItemAt() method
 }
 

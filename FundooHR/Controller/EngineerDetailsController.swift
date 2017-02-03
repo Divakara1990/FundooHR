@@ -30,18 +30,18 @@ class EngineerDetailsController: NSObject, EmployeeControllerProtocol
     }
     
     //function called from the viewmodel
-     func fetchEngineerDetails()-> Void
-     {
+    func fetchEngineerDetails()-> Void
+    {
         //calling the function which is present in the services
         mFetchEngineerDetails?.fetchEmployeeDetails()
     }
     
     
     //receiving the data from the services
-    func sendEmployeeDetails(engDetailArray :[EngineerDetails]) -> Void {
-    
+    func sendEmployeeDetails(engDetailArray :[EngineerDetails]) -> Void
+    {
         //sending the received data from services to the viewmodel
         pEmpVMPro?.sendEngineerDetails(edArray:engDetailArray)
         
-        }
+    }
 }
