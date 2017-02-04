@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white];
         
 
-        UIApplication.shared.setStatusBarHidden(true, with: .fade)
+        //UIApplication.shared.setStatusBarHidden(true, with: .fade)
         FIRApp.configure()
         return true
     }

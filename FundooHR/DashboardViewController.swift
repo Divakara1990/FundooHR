@@ -64,6 +64,11 @@ class DashboardViewController: UIViewController
         todaysDate.text = CurrentDate
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        //to hide the statusbar in all the viewcontroller
+        UIApplication.shared.isStatusBarHidden = true
+    }
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
